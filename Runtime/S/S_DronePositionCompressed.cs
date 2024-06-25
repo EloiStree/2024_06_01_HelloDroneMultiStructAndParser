@@ -48,28 +48,5 @@ public struct S_DronePositionCompressed
         return Quaternion.Euler(x, y,z);
     }
 
-    public S_DronePositionCompressed GetCopy()
-    {
-        return new S_DronePositionCompressed()
-        {
-            m_localPositionX = m_localPositionX,
-            m_localPositionY = m_localPositionY,
-            m_localPositionZ = m_localPositionZ,
-            m_eulerAngleX = m_eulerAngleX,
-            m_eulerAngleY = m_eulerAngleY,
-            m_eulerAngleZ = m_eulerAngleZ
-        };
-    }
-}
-public struct PS_DronePositionCompressed : I_BytesParsable<S_DronePositionCompressed>
-{
-    public void Parse(S_DronePositionCompressed toParse, out byte[] bytes)
-    {
-        throw new System.NotImplementedException();
-    }
-
-    public bool TryParse(byte[] bytes, out S_DronePositionCompressed fromBytes)
-    {
-        throw new System.NotImplementedException();
-    }
+   
 }

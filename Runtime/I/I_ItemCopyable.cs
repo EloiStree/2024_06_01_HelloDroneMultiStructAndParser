@@ -3,5 +3,5 @@
 
 public interface I_ItemCopyable<T>
 {
-    T GetCopy();
+    void GetCopy(T source, out T copy);
 }

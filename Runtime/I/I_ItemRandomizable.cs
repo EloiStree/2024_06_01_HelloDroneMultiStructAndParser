@@ -3,5 +3,5 @@
 
 public interface I_ItemRandomizable<T>
 {
-    T Randomize();
+    void Randomize(T source, out T copy);
 }

@@ -1,0 +1,1358 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 12
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 1
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 512
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 256
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 1
+    m_PVRDenoiserTypeDirect: 1
+    m_PVRDenoiserTypeIndirect: 1
+    m_PVRDenoiserTypeAO: 1
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 0}
+  m_LightingSettings: {fileID: 0}
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 3
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    buildHeightMesh: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &155506987
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 155506989}
+  - component: {fileID: 155506988}
+  m_Layer: 0
+  m_Name: TDD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &155506988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155506987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2060ca2a2da298e42a835b4f7e00a50d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_data:
+    gameNetworkFrame:
+      m_category255: 0
+      m_randomized:
+        m_utcNowTickServer: 683190912
+        m_gameNetworkFrame: 1157259648
+      m_randomizedParsed:
+        m_utcNowTickServer: 683190912
+        m_gameNetworkFrame: 1157259648
+      m_copyOfRandomized:
+        m_utcNowTickServer: 683190912
+        m_gameNetworkFrame: 1157259648
+      m_startData:
+        m_utcNowTickServer: 0
+        m_gameNetworkFrame: 0
+      m_data: 0000000000000000000000000000000000
+      m_parseData:
+        m_utcNowTickServer: 0
+        m_gameNetworkFrame: 0
+      m_hasFixedSize: 1
+      m_debugBytesSize: 17
+    ballGoalInfo:
+      m_category255: 0
+      m_randomized:
+        m_goalDistanceOfCenterMeter: 2
+        m_goalCenterHeightMeter: 2.2847326
+        m_goalWidthRadiusMeter: 0.48168057
+        m_goalDepthMeter: 0.21970591
+        m_ballRadius: 0.27209926
+      m_randomizedParsed:
+        m_goalDistanceOfCenterMeter: 2
+        m_goalCenterHeightMeter: 2.2847326
+        m_goalWidthRadiusMeter: 0.48168057
+        m_goalDepthMeter: 0.21970591
+        m_ballRadius: 0.27209926
+      m_copyOfRandomized:
+        m_goalDistanceOfCenterMeter: 2
+        m_goalCenterHeightMeter: 2.2847326
+        m_goalWidthRadiusMeter: 0.48168057
+        m_goalDepthMeter: 0.21970591
+        m_ballRadius: 0.27209926
+      m_startData:
+        m_goalDistanceOfCenterMeter: 0
+        m_goalCenterHeightMeter: 0
+        m_goalWidthRadiusMeter: 0
+        m_goalDepthMeter: 0
+        m_ballRadius: 0
+      m_data: 000000000000000000000000000000000000000000
+      m_parseData:
+        m_goalDistanceOfCenterMeter: 0
+        m_goalCenterHeightMeter: 0
+        m_goalWidthRadiusMeter: 0
+        m_goalDepthMeter: 0
+        m_ballRadius: 0
+      m_hasFixedSize: 1
+      m_debugBytesSize: 21
+    ballStatePosition:
+      m_category255: 8
+      m_randomized:
+        m_dateTimeUtcTick: 652072111
+        m_position: {x: -28173, y: -15382, z: -8057}
+        m_rotation: {x: -0.43019712, y: 0.57600826, z: 0.56064385, w: 0.41088137}
+      m_randomizedParsed:
+        m_dateTimeUtcTick: 652072111
+        m_position: {x: -28173, y: -15382, z: -8057}
+        m_rotation: {x: -0.43124908, y: 0.5682925, z: 0.5602263, w: 0.4209684}
+      m_copyOfRandomized:
+        m_dateTimeUtcTick: 652072111
+        m_position: {x: -28173, y: -15382, z: -8057}
+        m_rotation: {x: -0.43019712, y: 0.57600826, z: 0.56064385, w: 0.41088137}
+      m_startData:
+        m_dateTimeUtcTick: 5
+        m_position: {x: 4, y: 5, z: 9}
+        m_rotation: {x: 0.3006243, y: 0.38544753, z: -0.0070262775, w: 0.87235653}
+      m_data: 08050000000000000004000500090016240a
+      m_parseData:
+        m_dateTimeUtcTick: 5
+        m_position: {x: 4, y: 5, z: 9}
+        m_rotation: {x: 0.2908049, y: 0.38060302, z: -0.0070726275, w: 0.8777949}
+      m_hasFixedSize: 1
+      m_debugBytesSize: 18
+    positionOfDrones:
+      m_category255: 0
+      m_randomized:
+        m_dateTimeUtcTick: 57151359
+        m_framePushed: 1161114256
+        m_redDrone0Stricker:
+          m_localPositionX: -18946
+          m_localPositionY: 23917
+          m_localPositionZ: 12595
+          m_eulerAngleX: 149
+          m_eulerAngleY: 206
+          m_eulerAngleZ: 113
+        m_redDrone1:
+          m_localPositionX: -4650
+          m_localPositionY: 32554
+          m_localPositionZ: -2482
+          m_eulerAngleX: 248
+          m_eulerAngleY: 241
+          m_eulerAngleZ: 20
+        m_redDrone2:
+          m_localPositionX: 10781
+          m_localPositionY: -19458
+          m_localPositionZ: -9649
+          m_eulerAngleX: 211
+          m_eulerAngleY: 60
+          m_eulerAngleZ: 143
+        m_redDrone3:
+          m_localPositionX: 20298
+          m_localPositionY: 11796
+          m_localPositionZ: -12888
+          m_eulerAngleX: 195
+          m_eulerAngleY: 26
+          m_eulerAngleZ: 86
+        m_redDrone4:
+          m_localPositionX: 3105
+          m_localPositionY: -31045
+          m_localPositionZ: 29225
+          m_eulerAngleX: 22
+          m_eulerAngleY: 135
+          m_eulerAngleZ: 240
+        m_redDrone5:
+          m_localPositionX: 1229
+          m_localPositionY: 25767
+          m_localPositionZ: 7056
+          m_eulerAngleX: 245
+          m_eulerAngleY: 245
+          m_eulerAngleZ: 31
+        m_blueDrone0Stricker:
+          m_localPositionX: -25248
+          m_localPositionY: -15213
+          m_localPositionZ: -9343
+          m_eulerAngleX: 159
+          m_eulerAngleY: 200
+          m_eulerAngleZ: 118
+        m_blueDrone1:
+          m_localPositionX: 15178
+          m_localPositionY: -32388
+          m_localPositionZ: 17066
+          m_eulerAngleX: 130
+          m_eulerAngleY: 210
+          m_eulerAngleZ: 219
+        m_blueDrone2:
+          m_localPositionX: 7995
+          m_localPositionY: 3821
+          m_localPositionZ: 16542
+          m_eulerAngleX: 192
+          m_eulerAngleY: 125
+          m_eulerAngleZ: 102
+        m_blueDrone3:
+          m_localPositionX: 9271
+          m_localPositionY: -27406
+          m_localPositionZ: -5071
+          m_eulerAngleX: 122
+          m_eulerAngleY: 28
+          m_eulerAngleZ: 40
+        m_blueDrone4:
+          m_localPositionX: -30971
+          m_localPositionY: 6980
+          m_localPositionZ: 768
+          m_eulerAngleX: 40
+          m_eulerAngleY: 54
+          m_eulerAngleZ: 140
+        m_blueDrone5:
+          m_localPositionX: 21590
+          m_localPositionY: 20496
+          m_localPositionZ: 528
+          m_eulerAngleX: 90
+          m_eulerAngleY: 114
+          m_eulerAngleZ: 186
+      m_randomizedParsed:
+        m_dateTimeUtcTick: 57151359
+        m_framePushed: 1161114256
+        m_redDrone0Stricker:
+          m_localPositionX: -18946
+          m_localPositionY: 23917
+          m_localPositionZ: 12595
+          m_eulerAngleX: 149
+          m_eulerAngleY: 206
+          m_eulerAngleZ: 113
+        m_redDrone1:
+          m_localPositionX: -4650
+          m_localPositionY: 32554
+          m_localPositionZ: -2482
+          m_eulerAngleX: 248
+          m_eulerAngleY: 241
+          m_eulerAngleZ: 20
+        m_redDrone2:
+          m_localPositionX: 10781
+          m_localPositionY: -19458
+          m_localPositionZ: -9649
+          m_eulerAngleX: 211
+          m_eulerAngleY: 60
+          m_eulerAngleZ: 143
+        m_redDrone3:
+          m_localPositionX: 20298
+          m_localPositionY: 11796
+          m_localPositionZ: -12888
+          m_eulerAngleX: 195
+          m_eulerAngleY: 26
+          m_eulerAngleZ: 86
+        m_redDrone4:
+          m_localPositionX: 3105
+          m_localPositionY: -31045
+          m_localPositionZ: 29225
+          m_eulerAngleX: 22
+          m_eulerAngleY: 135
+          m_eulerAngleZ: 240
+        m_redDrone5:
+          m_localPositionX: 1229
+          m_localPositionY: 25767
+          m_localPositionZ: 7056
+          m_eulerAngleX: 245
+          m_eulerAngleY: 245
+          m_eulerAngleZ: 31
+        m_blueDrone0Stricker:
+          m_localPositionX: -25248
+          m_localPositionY: -15213
+          m_localPositionZ: -9343
+          m_eulerAngleX: 159
+          m_eulerAngleY: 200
+          m_eulerAngleZ: 118
+        m_blueDrone1:
+          m_localPositionX: 15178
+          m_localPositionY: -32388
+          m_localPositionZ: 17066
+          m_eulerAngleX: 130
+          m_eulerAngleY: 210
+          m_eulerAngleZ: 219
+        m_blueDrone2:
+          m_localPositionX: 7995
+          m_localPositionY: 3821
+          m_localPositionZ: 16542
+          m_eulerAngleX: 192
+          m_eulerAngleY: 125
+          m_eulerAngleZ: 102
+        m_blueDrone3:
+          m_localPositionX: 9271
+          m_localPositionY: -27406
+          m_localPositionZ: -5071
+          m_eulerAngleX: 122
+          m_eulerAngleY: 28
+          m_eulerAngleZ: 40
+        m_blueDrone4:
+          m_localPositionX: -30971
+          m_localPositionY: 6980
+          m_localPositionZ: 768
+          m_eulerAngleX: 40
+          m_eulerAngleY: 54
+          m_eulerAngleZ: 140
+        m_blueDrone5:
+          m_localPositionX: 21590
+          m_localPositionY: 20496
+          m_localPositionZ: 528
+          m_eulerAngleX: 90
+          m_eulerAngleY: 114
+          m_eulerAngleZ: 186
+      m_copyOfRandomized:
+        m_dateTimeUtcTick: 57151359
+        m_framePushed: 1161114256
+        m_redDrone0Stricker:
+          m_localPositionX: -18946
+          m_localPositionY: 23917
+          m_localPositionZ: 12595
+          m_eulerAngleX: 149
+          m_eulerAngleY: 206
+          m_eulerAngleZ: 113
+        m_redDrone1:
+          m_localPositionX: -4650
+          m_localPositionY: 32554
+          m_localPositionZ: -2482
+          m_eulerAngleX: 248
+          m_eulerAngleY: 241
+          m_eulerAngleZ: 20
+        m_redDrone2:
+          m_localPositionX: 10781
+          m_localPositionY: -19458
+          m_localPositionZ: -9649
+          m_eulerAngleX: 211
+          m_eulerAngleY: 60
+          m_eulerAngleZ: 143
+        m_redDrone3:
+          m_localPositionX: 20298
+          m_localPositionY: 11796
+          m_localPositionZ: -12888
+          m_eulerAngleX: 195
+          m_eulerAngleY: 26
+          m_eulerAngleZ: 86
+        m_redDrone4:
+          m_localPositionX: 3105
+          m_localPositionY: -31045
+          m_localPositionZ: 29225
+          m_eulerAngleX: 22
+          m_eulerAngleY: 135
+          m_eulerAngleZ: 240
+        m_redDrone5:
+          m_localPositionX: 1229
+          m_localPositionY: 25767
+          m_localPositionZ: 7056
+          m_eulerAngleX: 245
+          m_eulerAngleY: 245
+          m_eulerAngleZ: 31
+        m_blueDrone0Stricker:
+          m_localPositionX: -25248
+          m_localPositionY: -15213
+          m_localPositionZ: -9343
+          m_eulerAngleX: 159
+          m_eulerAngleY: 200
+          m_eulerAngleZ: 118
+        m_blueDrone1:
+          m_localPositionX: 15178
+          m_localPositionY: -32388
+          m_localPositionZ: 17066
+          m_eulerAngleX: 130
+          m_eulerAngleY: 210
+          m_eulerAngleZ: 219
+        m_blueDrone2:
+          m_localPositionX: 7995
+          m_localPositionY: 3821
+          m_localPositionZ: 16542
+          m_eulerAngleX: 192
+          m_eulerAngleY: 125
+          m_eulerAngleZ: 102
+        m_blueDrone3:
+          m_localPositionX: 9271
+          m_localPositionY: -27406
+          m_localPositionZ: -5071
+          m_eulerAngleX: 122
+          m_eulerAngleY: 28
+          m_eulerAngleZ: 40
+        m_blueDrone4:
+          m_localPositionX: -30971
+          m_localPositionY: 6980
+          m_localPositionZ: 768
+          m_eulerAngleX: 40
+          m_eulerAngleY: 54
+          m_eulerAngleZ: 140
+        m_blueDrone5:
+          m_localPositionX: 21590
+          m_localPositionY: 20496
+          m_localPositionZ: 528
+          m_eulerAngleX: 90
+          m_eulerAngleY: 114
+          m_eulerAngleZ: 186
+      m_startData:
+        m_dateTimeUtcTick: 0
+        m_framePushed: 0
+        m_redDrone0Stricker:
+          m_localPositionX: 0
+          m_localPositionY: 0
+          m_localPositionZ: 0
+          m_eulerAngleX: 0
+          m_eulerAngleY: 0
+          m_eulerAngleZ: 0
+        m_redDrone1:
+          m_localPositionX: 0
+          m_localPositionY: 0
+          m_localPositionZ: 0
+          m_eulerAngleX: 0
+          m_eulerAngleY: 0
+          m_eulerAngleZ: 0
+        m_redDrone2:
+          m_localPositionX: 0
+          m_localPositionY: 0
+          m_localPositionZ: 0
+          m_eulerAngleX: 0
+          m_eulerAngleY: 0
+          m_eulerAngleZ: 0
+        m_redDrone3:
+          m_localPositionX: 0
+          m_localPositionY: 0
+          m_localPositionZ: 0
+          m_eulerAngleX: 0
+          m_eulerAngleY: 0
+          m_eulerAngleZ: 0
+        m_redDrone4:
+          m_localPositionX: 0
+          m_localPositionY: 0
+          m_localPositionZ: 0
+          m_eulerAngleX: 0
+          m_eulerAngleY: 0
+          m_eulerAngleZ: 0
+        m_redDrone5:
+          m_localPositionX: 0
+          m_localPositionY: 0
+          m_localPositionZ: 0
+          m_eulerAngleX: 0
+          m_eulerAngleY: 0
+          m_eulerAngleZ: 0
+        m_blueDrone0Stricker:
+          m_localPositionX: 0
+          m_localPositionY: 0
+          m_localPositionZ: 0
+          m_eulerAngleX: 0
+          m_eulerAngleY: 0
+          m_eulerAngleZ: 0
+        m_blueDrone1:
+          m_localPositionX: 0
+          m_localPositionY: 0
+          m_localPositionZ: 0
+          m_eulerAngleX: 0
+          m_eulerAngleY: 0
+          m_eulerAngleZ: 0
+        m_blueDrone2:
+          m_localPositionX: 0
+          m_localPositionY: 0
+          m_localPositionZ: 0
+          m_eulerAngleX: 0
+          m_eulerAngleY: 0
+          m_eulerAngleZ: 0
+        m_blueDrone3:
+          m_localPositionX: 0
+          m_localPositionY: 0
+          m_localPositionZ: 0
+          m_eulerAngleX: 0
+          m_eulerAngleY: 0
+          m_eulerAngleZ: 0
+        m_blueDrone4:
+          m_localPositionX: 0
+          m_localPositionY: 0
+          m_localPositionZ: 0
+          m_eulerAngleX: 0
+          m_eulerAngleY: 0
+          m_eulerAngleZ: 0
+        m_blueDrone5:
+          m_localPositionX: 0
+          m_localPositionY: 0
+          m_localPositionZ: 0
+          m_eulerAngleX: 0
+          m_eulerAngleY: 0
+          m_eulerAngleZ: 0
+      m_data: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      m_parseData:
+        m_dateTimeUtcTick: 0
+        m_framePushed: 0
+        m_redDrone0Stricker:
+          m_localPositionX: 0
+          m_localPositionY: 0
+          m_localPositionZ: 0
+          m_eulerAngleX: 0
+          m_eulerAngleY: 0
+          m_eulerAngleZ: 0
+        m_redDrone1:
+          m_localPositionX: 0
+          m_localPositionY: 0
+          m_localPositionZ: 0
+          m_eulerAngleX: 0
+          m_eulerAngleY: 0
+          m_eulerAngleZ: 0
+        m_redDrone2:
+          m_localPositionX: 0
+          m_localPositionY: 0
+          m_localPositionZ: 0
+          m_eulerAngleX: 0
+          m_eulerAngleY: 0
+          m_eulerAngleZ: 0
+        m_redDrone3:
+          m_localPositionX: 0
+          m_localPositionY: 0
+          m_localPositionZ: 0
+          m_eulerAngleX: 0
+          m_eulerAngleY: 0
+          m_eulerAngleZ: 0
+        m_redDrone4:
+          m_localPositionX: 0
+          m_localPositionY: 0
+          m_localPositionZ: 0
+          m_eulerAngleX: 0
+          m_eulerAngleY: 0
+          m_eulerAngleZ: 0
+        m_redDrone5:
+          m_localPositionX: 0
+          m_localPositionY: 0
+          m_localPositionZ: 0
+          m_eulerAngleX: 0
+          m_eulerAngleY: 0
+          m_eulerAngleZ: 0
+        m_blueDrone0Stricker:
+          m_localPositionX: 0
+          m_localPositionY: 0
+          m_localPositionZ: 0
+          m_eulerAngleX: 0
+          m_eulerAngleY: 0
+          m_eulerAngleZ: 0
+        m_blueDrone1:
+          m_localPositionX: 0
+          m_localPositionY: 0
+          m_localPositionZ: 0
+          m_eulerAngleX: 0
+          m_eulerAngleY: 0
+          m_eulerAngleZ: 0
+        m_blueDrone2:
+          m_localPositionX: 0
+          m_localPositionY: 0
+          m_localPositionZ: 0
+          m_eulerAngleX: 0
+          m_eulerAngleY: 0
+          m_eulerAngleZ: 0
+        m_blueDrone3:
+          m_localPositionX: 0
+          m_localPositionY: 0
+          m_localPositionZ: 0
+          m_eulerAngleX: 0
+          m_eulerAngleY: 0
+          m_eulerAngleZ: 0
+        m_blueDrone4:
+          m_localPositionX: 0
+          m_localPositionY: 0
+          m_localPositionZ: 0
+          m_eulerAngleX: 0
+          m_eulerAngleY: 0
+          m_eulerAngleZ: 0
+        m_blueDrone5:
+          m_localPositionX: 0
+          m_localPositionY: 0
+          m_localPositionZ: 0
+          m_eulerAngleX: 0
+          m_eulerAngleY: 0
+          m_eulerAngleZ: 0
+      m_hasFixedSize: 1
+      m_debugBytesSize: 125
+    timeState:
+      m_category255: 0
+      m_randomized:
+        m_secondsSinceMatchStarted: 86.37061
+        m_secondsSinceSetStarted: 71.54286
+        m_timeOfServerDateTimeUtcNowTicks: 1475469186
+      m_randomizedParsed:
+        m_secondsSinceMatchStarted: 86.37061
+        m_secondsSinceSetStarted: 71.54286
+        m_timeOfServerDateTimeUtcNowTicks: 1475469186
+      m_copyOfRandomized:
+        m_secondsSinceMatchStarted: 86.37061
+        m_secondsSinceSetStarted: 71.54286
+        m_timeOfServerDateTimeUtcNowTicks: 1475469186
+      m_startData:
+        m_secondsSinceMatchStarted: 45
+        m_secondsSinceSetStarted: 456
+        m_timeOfServerDateTimeUtcNowTicks: 456
+      m_data: 00000034420000e443c801000000000000
+      m_parseData:
+        m_secondsSinceMatchStarted: 45
+        m_secondsSinceSetStarted: 456
+        m_timeOfServerDateTimeUtcNowTicks: 456
+      m_hasFixedSize: 1
+      m_debugBytesSize: 17
+    matchStateInfo:
+      m_category255: 0
+      m_randomized:
+        m_bluePoints: 1328383360
+        m_redPoints: 1636380672
+        m_blueSets: 507234560
+        m_redSets: 824785024
+        m_utcTickInSecondsWhenMatchStarted: 1374918508
+        m_utcTickInSecondsWhenMatchFinished: 42183722
+      m_randomizedParsed:
+        m_bluePoints: 1328383360
+        m_redPoints: 1636380672
+        m_blueSets: 507234560
+        m_redSets: 824785024
+        m_utcTickInSecondsWhenMatchStarted: 1374918508
+        m_utcTickInSecondsWhenMatchFinished: 42183722
+      m_copyOfRandomized:
+        m_bluePoints: 1328383360
+        m_redPoints: 1636380672
+        m_blueSets: 507234560
+        m_redSets: 824785024
+        m_utcTickInSecondsWhenMatchStarted: 1374918508
+        m_utcTickInSecondsWhenMatchFinished: 42183722
+      m_startData:
+        m_bluePoints: 0
+        m_redPoints: 0
+        m_blueSets: 0
+        m_redSets: 0
+        m_utcTickInSecondsWhenMatchStarted: 0
+        m_utcTickInSecondsWhenMatchFinished: 0
+      m_data: 000000000000000000000000000000000000000000000000000000000000000000
+      m_parseData:
+        m_bluePoints: 0
+        m_redPoints: 0
+        m_blueSets: 0
+        m_redSets: 0
+        m_utcTickInSecondsWhenMatchStarted: 0
+        m_utcTickInSecondsWhenMatchFinished: 0
+      m_hasFixedSize: 1
+      m_debugBytesSize: 33
+    staticMatchInfo:
+      m_category255: 0
+      m_randomized:
+        m_maxTimingOfSet: 55.938435
+        m_maxTimingOfMatch: 80.996506
+        m_numberOfSetsToWinMatch: 8.322367
+        m_numberOfPointsToForceWinSet: 4.5487437
+        m_arenaWidthMeter: 7.578369
+        m_arenaHeightMeter: 5.7842336
+        m_arenaDepthMeter: 9.755688
+        m_goalDistanceOfCenterMeter: 1.115226
+        m_goalCenterHeightMeter: 2.3633976
+        m_goalInnerRadiusMeter: 0.40910298
+        m_goalOutterRadiusMeter: 0.5252034
+        m_goalDepthMeter: 0.17996517
+        m_droneSphereRadiusMeter: 0.22114515
+      m_randomizedParsed:
+        m_maxTimingOfSet: 55.938435
+        m_maxTimingOfMatch: 80.996506
+        m_numberOfSetsToWinMatch: 8.322367
+        m_numberOfPointsToForceWinSet: 4.5487437
+        m_arenaWidthMeter: 7.578369
+        m_arenaHeightMeter: 5.7842336
+        m_arenaDepthMeter: 9.755688
+        m_goalDistanceOfCenterMeter: 1.115226
+        m_goalCenterHeightMeter: 2.3633976
+        m_goalInnerRadiusMeter: 0.40910298
+        m_goalOutterRadiusMeter: 0.5252034
+        m_goalDepthMeter: 0.17996517
+        m_droneSphereRadiusMeter: 0.22114515
+      m_copyOfRandomized:
+        m_maxTimingOfSet: 55.938435
+        m_maxTimingOfMatch: 80.996506
+        m_numberOfSetsToWinMatch: 8.322367
+        m_numberOfPointsToForceWinSet: 4.5487437
+        m_arenaWidthMeter: 7.578369
+        m_arenaHeightMeter: 5.7842336
+        m_arenaDepthMeter: 9.755688
+        m_goalDistanceOfCenterMeter: 1.115226
+        m_goalCenterHeightMeter: 2.3633976
+        m_goalInnerRadiusMeter: 0.40910298
+        m_goalOutterRadiusMeter: 0.5252034
+        m_goalDepthMeter: 0.17996517
+        m_droneSphereRadiusMeter: 0.22114515
+      m_startData:
+        m_maxTimingOfSet: 0
+        m_maxTimingOfMatch: 0
+        m_numberOfSetsToWinMatch: 0
+        m_numberOfPointsToForceWinSet: 0
+        m_arenaWidthMeter: 0
+        m_arenaHeightMeter: 0
+        m_arenaDepthMeter: 0
+        m_goalDistanceOfCenterMeter: 0
+        m_goalCenterHeightMeter: 0
+        m_goalInnerRadiusMeter: 0
+        m_goalOutterRadiusMeter: 0
+        m_goalDepthMeter: 0
+        m_droneSphereRadiusMeter: 0
+      m_data: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      m_parseData:
+        m_maxTimingOfSet: 0
+        m_maxTimingOfMatch: 0
+        m_numberOfSetsToWinMatch: 0
+        m_numberOfPointsToForceWinSet: 0
+        m_arenaWidthMeter: 0
+        m_arenaHeightMeter: 0
+        m_arenaDepthMeter: 0
+        m_goalDistanceOfCenterMeter: 0
+        m_goalCenterHeightMeter: 0
+        m_goalInnerRadiusMeter: 0
+        m_goalOutterRadiusMeter: 0
+        m_goalDepthMeter: 0
+        m_droneSphereRadiusMeter: 0
+      m_hasFixedSize: 1
+      m_debugBytesSize: 53
+    projectilCreated:
+      m_category255: 0
+      m_randomized:
+        m_poolId: 27
+        m_poolItemIndex: 1081634923
+        m_serverUtcNowTicks: 2055239280
+        m_startPosition: {x: -32.296432, y: 97.34192, z: -89.76161}
+        m_startRotation: {x: 0.19788635, y: 0.08760941, z: -0.88082886, w: 0.76373863}
+        m_startDirection: {x: 0.49244878, y: -0.05094421, z: -0.8117056}
+        m_speedInMetersPerSecond: 0.8253531
+        m_colliderRadius: 1.063908
+      m_randomizedParsed:
+        m_poolId: 27
+        m_poolItemIndex: 1081634923
+        m_serverUtcNowTicks: 2055239280
+        m_startPosition: {x: -32.296432, y: 97.34192, z: -89.76161}
+        m_startRotation: {x: 0.19788635, y: 0.08760941, z: -0.88082886, w: 0.76373863}
+        m_startDirection: {x: 0.49244878, y: -0.05094421, z: -0.8117056}
+        m_speedInMetersPerSecond: 0.8253531
+        m_colliderRadius: 1.063908
+      m_copyOfRandomized:
+        m_poolId: 27
+        m_poolItemIndex: 1081634923
+        m_serverUtcNowTicks: 2055239280
+        m_startPosition: {x: -32.296432, y: 97.34192, z: -89.76161}
+        m_startRotation: {x: 0.19788635, y: 0.08760941, z: -0.88082886, w: 0.76373863}
+        m_startDirection: {x: 0.49244878, y: -0.05094421, z: -0.8117056}
+        m_speedInMetersPerSecond: 0.8253531
+        m_colliderRadius: 1.063908
+      m_startData:
+        m_poolId: 0
+        m_poolItemIndex: 0
+        m_serverUtcNowTicks: 0
+        m_startPosition: {x: 0, y: 0, z: 0}
+        m_startRotation: {x: 0, y: 0, z: 0, w: 0}
+        m_startDirection: {x: 0, y: 0, z: 0}
+        m_speedInMetersPerSecond: 0
+        m_colliderRadius: 0
+      m_data: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      m_parseData:
+        m_poolId: 0
+        m_poolItemIndex: 0
+        m_serverUtcNowTicks: 0
+        m_startPosition: {x: 0, y: 0, z: 0}
+        m_startRotation: {x: 0, y: 0, z: 0, w: 0}
+        m_startDirection: {x: 0, y: 0, z: 0}
+        m_speedInMetersPerSecond: 0
+        m_colliderRadius: 0
+      m_hasFixedSize: 1
+      m_debugBytesSize: 62
+    destructionEvent:
+      m_category255: 0
+      m_randomized:
+        m_poolId: 100
+        m_poolItemIndex: 206358549
+        m_serverUtcNowTicks: 1450953511
+      m_randomizedParsed:
+        m_poolId: 100
+        m_poolItemIndex: 206358549
+        m_serverUtcNowTicks: 1450953511
+      m_copyOfRandomized:
+        m_poolId: 100
+        m_poolItemIndex: 206358549
+        m_serverUtcNowTicks: 1450953511
+      m_startData:
+        m_poolId: 0
+        m_poolItemIndex: 0
+        m_serverUtcNowTicks: 0
+      m_data: 0000000000000000000000000000
+      m_parseData:
+        m_poolId: 0
+        m_poolItemIndex: 0
+        m_serverUtcNowTicks: 0
+      m_hasFixedSize: 1
+      m_debugBytesSize: 14
+      m_size: 14
+    indexClaimInteger:
+      m_category255: 0
+      m_randomized:
+        m_redDrone0Stricker: -1147593275
+        m_redDrone1: -600267449
+        m_redDrone2: -870995318
+        m_redDrone3: -1687128923
+        m_redDrone4: 1760834875
+        m_redDrone5: -243292161
+        m_blueDrone0Stricker: 283054752
+        m_blueDrone1: -2003662526
+        m_blueDrone2: -1048168314
+        m_blueDrone3: 1296707350
+        m_blueDrone4: 627600909
+        m_blueDrone5: -1188283525
+      m_randomizedParsed:
+        m_redDrone0Stricker: -1147593275
+        m_redDrone1: -600267449
+        m_redDrone2: -870995318
+        m_redDrone3: -1687128923
+        m_redDrone4: 1760834875
+        m_redDrone5: -243292161
+        m_blueDrone0Stricker: 283054752
+        m_blueDrone1: -2003662526
+        m_blueDrone2: -1048168314
+        m_blueDrone3: 1296707350
+        m_blueDrone4: 627600909
+        m_blueDrone5: -1188283525
+      m_copyOfRandomized:
+        m_redDrone0Stricker: -1147593275
+        m_redDrone1: -600267449
+        m_redDrone2: -870995318
+        m_redDrone3: -1687128923
+        m_redDrone4: 1760834875
+        m_redDrone5: -243292161
+        m_blueDrone0Stricker: 283054752
+        m_blueDrone1: -2003662526
+        m_blueDrone2: -1048168314
+        m_blueDrone3: 1296707350
+        m_blueDrone4: 627600909
+        m_blueDrone5: -1188283525
+      m_startData:
+        m_redDrone0Stricker: 0
+        m_redDrone1: 0
+        m_redDrone2: 0
+        m_redDrone3: 0
+        m_redDrone4: 0
+        m_redDrone5: 0
+        m_blueDrone0Stricker: 0
+        m_blueDrone1: 0
+        m_blueDrone2: 0
+        m_blueDrone3: 0
+        m_blueDrone4: 0
+        m_blueDrone5: 0
+      m_data: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      m_parseData:
+        m_redDrone0Stricker: 0
+        m_redDrone1: 0
+        m_redDrone2: 0
+        m_redDrone3: 0
+        m_redDrone4: 0
+        m_redDrone5: 0
+        m_blueDrone0Stricker: 0
+        m_blueDrone1: 0
+        m_blueDrone2: 0
+        m_blueDrone3: 0
+        m_blueDrone4: 0
+        m_blueDrone5: 0
+      m_hasFixedSize: 1
+      m_debugBytesSize: 49
+    rsaClaim:
+      m_category255: 0
+      m_randomized:
+        m_redDrone0Stricker: <RSAKeyValue><Modulus>JLPvA5qs8YuylrszWxiAQV3SUHa4DzjY15lR3EdiQdATR/0an+UoE2p6SFDu2J8bYvOrpR+PBtlbA6/65PRAy9hiiR/co5Oelj0+hyf8oVdqjlftgt7GzwK/0HSx4JUQpFut4Bi6sni+RohwjM0B6BPa08lWXOC4rui/ODHup4k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_redDrone1: <RSAKeyValue><Modulus>KHi+ewWhCSt5L6pHuxmofkWIa38eOg/637/9k9k9vshBDGWtSemUU/ezRJxy3O/baW2jPc3GjOIo7KczRpa7elfDyqYQDVL6x7Sn4Upx5b2/GMI0naFxZhSdXfYfEud9XxbumFB5Fh+prOR5P8oTFXmVfRjwm/GzIB+f6x1Acz4=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_redDrone2: <RSAKeyValue><Modulus>mnLS9srSfhxttZ/U9hsK70t/OxBg56LuAEZeCF071EqbvXR5nQ48MjNoe8H1UdmoEV9Qfgc/GDcjirha65vr93JlPFnpv8MdVTyOLv2KHR+tNbQvsosBNc9rGzW7EGgL0M6gTrOyJCpaR/kkeoHWxL4x3RJ7BYUuOqXqHO8LAB0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_redDrone3: <RSAKeyValue><Modulus>3YbfdWIQSFK3a9kHa5ZPZrwctdXFpomQyRKLatdhQBR76QlRVhpg0B1fs4m8Ni1ztI7CEXwyNz5cFyqUX0X26AY0qFmsgQVFt/3dTYC7ABsev0ECYFGFWfBYBx7aerqjmTeXIX8Y6Qe5MFYBKruIX3URqZtK4NCMmBEIpalPxS4=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_redDrone4: <RSAKeyValue><Modulus>qxyd1B/IH3Df8nIawvg9EQPnoJEYgwxtSImqYSJqrwfHDbd4VqCZYk7+qrySXvtA9CXgtE2JTlnSYyKfg9Sf1xf4THPPlmJBYlppQxNSRhPmIbGgIscVTsLj4Jc25homkoiwd9Jz6Mb0oRXd4GNKqgNfQluJb84KHz43OOhlTFA=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_redDrone5: <RSAKeyValue><Modulus>l4hGXgzvfYjiLxGinfHuwuPCx/NrDsvS7UMWbpOg7jabsvy4ZnsqlyMFfoMP0Dc9BMQ9jTENizvyjcZ4hQ+2/LHBwtZl41FJnNbgbwZX4RPamN2Rez28FVT9sz3+BefjtmMoquIEqEL6E5VKKQyQ39DY84Fc4tsmMGIxCCtPpr4=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_blueDrone0Stricker: <RSAKeyValue><Modulus>7gzb62Uqy3ygmD18mrkwPtP9FZVry7/USQ1PKNgrb8C+Nnyy+mXArCQAcjc9qwRanQxlh3/swtIp1vQTB/w51+PcoZKpmxjdySbiTTpoTTn0pjB0s9YiQSkpZnvCvsVPJv0pCpdnozYQtSg6Czyy1jdJRIRLirSDOfJYiWP1aDk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_blueDrone1: <RSAKeyValue><Modulus>F3eymjXGco/u7oe+S+gwnea/lnOgn2KfK+Z5C5CTT6G3qmxyBvsIHwr9+GJKC613ZfapfcKqxXyDgs0m0TTLCTSnacZBkAMUFMAYA/fCW6blAzAqD0X4CzYtvbt6e3XbGyZ0AUy5vLM1lX9RZhqJXHd04oZk/vK0j4rFCH5Fu08=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_blueDrone2: <RSAKeyValue><Modulus>tr0+MqZXKfUYjlWF0fOROSrDd6wSA/KA5N59vlEE2/34s9j67DuXLKkl0bgA7hLXnrbc6Q7hx/q6ID6+cH20e3YkiP6ziE8kP+I2eYcSskpB3PC+8CqcN+4DkoY/e69ZRWl09tjkmR8YrG8qSa4Ozl7JsGaCDDeBqEozlXaXolA=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_blueDrone3: <RSAKeyValue><Modulus>0GFePqR1JafA9vF8zA0QzlCgDeNdZ4hozrEpkiSNrapoqrWssvsKxz08FoLa9NYqHP4ucrZOBdbEqfqd79Ww5vXKPauYmM2rKgqtbxQz2HhT1BWJy3ioB83JMRLRBCJLbb5RWCchPLYylM2uFz6uGskoICcWZ/QahLrPveK6VA4=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_blueDrone4: <RSAKeyValue><Modulus>FrgPY/rdsNpqjFP56anCz+NE07xNOjF7g7TH/Bbd9SGFsqUjtDlK1bpegqhLmdOfb1Xez8NQKgeUMIPNtufzl0EltuNbGW9h6MTSlTabn5UtepjpJJVWgP3HkcOBBl8HWX8mR2JUGvLW67EJaBMPgHL8b/puIPURlF77+nwoAhU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_blueDrone5: <RSAKeyValue><Modulus>3JjKAU7Y8G75bfYAYJvnuQArMRpXoJmO3Uh+7hv2aSwhb2WSbpDZhW1Lagvk613Yk0DmdOZdEIPVa+Wbn3kBSmKOKcYECFvMG3vzLoEj/UdeYSNbD2es1VtZ2PMbLBrMSvHl6TdYn3KT+4LhiCQn1+C29jrBFKlyzR+pqASRpjo=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+      m_randomizedParsed:
+        m_redDrone0Stricker: <RSAKeyValue><Modulus>JLPvA5qs8YuylrszWxiAQV3SUHa4DzjY15lR3EdiQdATR/0an+UoE2p6SFDu2J8bYvOrpR+PBtlbA6/65PRAy9hiiR/co5Oelj0+hyf8oVdqjlftgt7GzwK/0HSx4JUQpFut4Bi6sni+RohwjM0B6BPa08lWXOC4rui/ODHup4k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_redDrone1: <RSAKeyValue><Modulus>KHi+ewWhCSt5L6pHuxmofkWIa38eOg/637/9k9k9vshBDGWtSemUU/ezRJxy3O/baW2jPc3GjOIo7KczRpa7elfDyqYQDVL6x7Sn4Upx5b2/GMI0naFxZhSdXfYfEud9XxbumFB5Fh+prOR5P8oTFXmVfRjwm/GzIB+f6x1Acz4=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_redDrone2: <RSAKeyValue><Modulus>mnLS9srSfhxttZ/U9hsK70t/OxBg56LuAEZeCF071EqbvXR5nQ48MjNoe8H1UdmoEV9Qfgc/GDcjirha65vr93JlPFnpv8MdVTyOLv2KHR+tNbQvsosBNc9rGzW7EGgL0M6gTrOyJCpaR/kkeoHWxL4x3RJ7BYUuOqXqHO8LAB0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_redDrone3: <RSAKeyValue><Modulus>3YbfdWIQSFK3a9kHa5ZPZrwctdXFpomQyRKLatdhQBR76QlRVhpg0B1fs4m8Ni1ztI7CEXwyNz5cFyqUX0X26AY0qFmsgQVFt/3dTYC7ABsev0ECYFGFWfBYBx7aerqjmTeXIX8Y6Qe5MFYBKruIX3URqZtK4NCMmBEIpalPxS4=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_redDrone4: <RSAKeyValue><Modulus>qxyd1B/IH3Df8nIawvg9EQPnoJEYgwxtSImqYSJqrwfHDbd4VqCZYk7+qrySXvtA9CXgtE2JTlnSYyKfg9Sf1xf4THPPlmJBYlppQxNSRhPmIbGgIscVTsLj4Jc25homkoiwd9Jz6Mb0oRXd4GNKqgNfQluJb84KHz43OOhlTFA=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_redDrone5: <RSAKeyValue><Modulus>l4hGXgzvfYjiLxGinfHuwuPCx/NrDsvS7UMWbpOg7jabsvy4ZnsqlyMFfoMP0Dc9BMQ9jTENizvyjcZ4hQ+2/LHBwtZl41FJnNbgbwZX4RPamN2Rez28FVT9sz3+BefjtmMoquIEqEL6E5VKKQyQ39DY84Fc4tsmMGIxCCtPpr4=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_blueDrone0Stricker: <RSAKeyValue><Modulus>7gzb62Uqy3ygmD18mrkwPtP9FZVry7/USQ1PKNgrb8C+Nnyy+mXArCQAcjc9qwRanQxlh3/swtIp1vQTB/w51+PcoZKpmxjdySbiTTpoTTn0pjB0s9YiQSkpZnvCvsVPJv0pCpdnozYQtSg6Czyy1jdJRIRLirSDOfJYiWP1aDk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_blueDrone1: <RSAKeyValue><Modulus>F3eymjXGco/u7oe+S+gwnea/lnOgn2KfK+Z5C5CTT6G3qmxyBvsIHwr9+GJKC613ZfapfcKqxXyDgs0m0TTLCTSnacZBkAMUFMAYA/fCW6blAzAqD0X4CzYtvbt6e3XbGyZ0AUy5vLM1lX9RZhqJXHd04oZk/vK0j4rFCH5Fu08=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_blueDrone2: <RSAKeyValue><Modulus>tr0+MqZXKfUYjlWF0fOROSrDd6wSA/KA5N59vlEE2/34s9j67DuXLKkl0bgA7hLXnrbc6Q7hx/q6ID6+cH20e3YkiP6ziE8kP+I2eYcSskpB3PC+8CqcN+4DkoY/e69ZRWl09tjkmR8YrG8qSa4Ozl7JsGaCDDeBqEozlXaXolA=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_blueDrone3: <RSAKeyValue><Modulus>0GFePqR1JafA9vF8zA0QzlCgDeNdZ4hozrEpkiSNrapoqrWssvsKxz08FoLa9NYqHP4ucrZOBdbEqfqd79Ww5vXKPauYmM2rKgqtbxQz2HhT1BWJy3ioB83JMRLRBCJLbb5RWCchPLYylM2uFz6uGskoICcWZ/QahLrPveK6VA4=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_blueDrone4: <RSAKeyValue><Modulus>FrgPY/rdsNpqjFP56anCz+NE07xNOjF7g7TH/Bbd9SGFsqUjtDlK1bpegqhLmdOfb1Xez8NQKgeUMIPNtufzl0EltuNbGW9h6MTSlTabn5UtepjpJJVWgP3HkcOBBl8HWX8mR2JUGvLW67EJaBMPgHL8b/puIPURlF77+nwoAhU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_blueDrone5: <RSAKeyValue><Modulus>3JjKAU7Y8G75bfYAYJvnuQArMRpXoJmO3Uh+7hv2aSwhb2WSbpDZhW1Lagvk613Yk0DmdOZdEIPVa+Wbn3kBSmKOKcYECFvMG3vzLoEj/UdeYSNbD2es1VtZ2PMbLBrMSvHl6TdYn3KT+4LhiCQn1+C29jrBFKlyzR+pqASRpjo=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+      m_copyOfRandomized:
+        m_redDrone0Stricker: <RSAKeyValue><Modulus>JLPvA5qs8YuylrszWxiAQV3SUHa4DzjY15lR3EdiQdATR/0an+UoE2p6SFDu2J8bYvOrpR+PBtlbA6/65PRAy9hiiR/co5Oelj0+hyf8oVdqjlftgt7GzwK/0HSx4JUQpFut4Bi6sni+RohwjM0B6BPa08lWXOC4rui/ODHup4k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_redDrone1: <RSAKeyValue><Modulus>KHi+ewWhCSt5L6pHuxmofkWIa38eOg/637/9k9k9vshBDGWtSemUU/ezRJxy3O/baW2jPc3GjOIo7KczRpa7elfDyqYQDVL6x7Sn4Upx5b2/GMI0naFxZhSdXfYfEud9XxbumFB5Fh+prOR5P8oTFXmVfRjwm/GzIB+f6x1Acz4=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_redDrone2: <RSAKeyValue><Modulus>mnLS9srSfhxttZ/U9hsK70t/OxBg56LuAEZeCF071EqbvXR5nQ48MjNoe8H1UdmoEV9Qfgc/GDcjirha65vr93JlPFnpv8MdVTyOLv2KHR+tNbQvsosBNc9rGzW7EGgL0M6gTrOyJCpaR/kkeoHWxL4x3RJ7BYUuOqXqHO8LAB0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_redDrone3: <RSAKeyValue><Modulus>3YbfdWIQSFK3a9kHa5ZPZrwctdXFpomQyRKLatdhQBR76QlRVhpg0B1fs4m8Ni1ztI7CEXwyNz5cFyqUX0X26AY0qFmsgQVFt/3dTYC7ABsev0ECYFGFWfBYBx7aerqjmTeXIX8Y6Qe5MFYBKruIX3URqZtK4NCMmBEIpalPxS4=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_redDrone4: <RSAKeyValue><Modulus>qxyd1B/IH3Df8nIawvg9EQPnoJEYgwxtSImqYSJqrwfHDbd4VqCZYk7+qrySXvtA9CXgtE2JTlnSYyKfg9Sf1xf4THPPlmJBYlppQxNSRhPmIbGgIscVTsLj4Jc25homkoiwd9Jz6Mb0oRXd4GNKqgNfQluJb84KHz43OOhlTFA=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_redDrone5: <RSAKeyValue><Modulus>l4hGXgzvfYjiLxGinfHuwuPCx/NrDsvS7UMWbpOg7jabsvy4ZnsqlyMFfoMP0Dc9BMQ9jTENizvyjcZ4hQ+2/LHBwtZl41FJnNbgbwZX4RPamN2Rez28FVT9sz3+BefjtmMoquIEqEL6E5VKKQyQ39DY84Fc4tsmMGIxCCtPpr4=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_blueDrone0Stricker: <RSAKeyValue><Modulus>7gzb62Uqy3ygmD18mrkwPtP9FZVry7/USQ1PKNgrb8C+Nnyy+mXArCQAcjc9qwRanQxlh3/swtIp1vQTB/w51+PcoZKpmxjdySbiTTpoTTn0pjB0s9YiQSkpZnvCvsVPJv0pCpdnozYQtSg6Czyy1jdJRIRLirSDOfJYiWP1aDk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_blueDrone1: <RSAKeyValue><Modulus>F3eymjXGco/u7oe+S+gwnea/lnOgn2KfK+Z5C5CTT6G3qmxyBvsIHwr9+GJKC613ZfapfcKqxXyDgs0m0TTLCTSnacZBkAMUFMAYA/fCW6blAzAqD0X4CzYtvbt6e3XbGyZ0AUy5vLM1lX9RZhqJXHd04oZk/vK0j4rFCH5Fu08=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_blueDrone2: <RSAKeyValue><Modulus>tr0+MqZXKfUYjlWF0fOROSrDd6wSA/KA5N59vlEE2/34s9j67DuXLKkl0bgA7hLXnrbc6Q7hx/q6ID6+cH20e3YkiP6ziE8kP+I2eYcSskpB3PC+8CqcN+4DkoY/e69ZRWl09tjkmR8YrG8qSa4Ozl7JsGaCDDeBqEozlXaXolA=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_blueDrone3: <RSAKeyValue><Modulus>0GFePqR1JafA9vF8zA0QzlCgDeNdZ4hozrEpkiSNrapoqrWssvsKxz08FoLa9NYqHP4ucrZOBdbEqfqd79Ww5vXKPauYmM2rKgqtbxQz2HhT1BWJy3ioB83JMRLRBCJLbb5RWCchPLYylM2uFz6uGskoICcWZ/QahLrPveK6VA4=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_blueDrone4: <RSAKeyValue><Modulus>FrgPY/rdsNpqjFP56anCz+NE07xNOjF7g7TH/Bbd9SGFsqUjtDlK1bpegqhLmdOfb1Xez8NQKgeUMIPNtufzl0EltuNbGW9h6MTSlTabn5UtepjpJJVWgP3HkcOBBl8HWX8mR2JUGvLW67EJaBMPgHL8b/puIPURlF77+nwoAhU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_blueDrone5: <RSAKeyValue><Modulus>3JjKAU7Y8G75bfYAYJvnuQArMRpXoJmO3Uh+7hv2aSwhb2WSbpDZhW1Lagvk613Yk0DmdOZdEIPVa+Wbn3kBSmKOKcYECFvMG3vzLoEj/UdeYSNbD2es1VtZ2PMbLBrMSvHl6TdYn3KT+4LhiCQn1+C29jrBFKlyzR+pqASRpjo=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+      m_startData:
+        m_redDrone0Stricker: <RSAKeyValue><Modulus>kVHjEyjD1unYI39k67Sejf1O+RMrDy82WQD3DDUUFiE+Ivzji4r7nvMgvsNZIEVDpp5TSgPrxe4J6MbimMy1JDgD1WwMP9e1WaFa/gXINRQqBPCH1eH9Ucu08QviOCBCaQIlepJArOVpW3rpQHP+E2YdStbdV2Uzc1qB6KWWzOA=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_redDrone1: <RSAKeyValue><Modulus>kVHjEyjD1unYI39k67Sejf1O+RMrDy82WQD3DDUUFiE+Ivzji4r7nvMgvsNZIEVDpp5TSgPrxe4J6MbimMy1JDgD1WwMP9e1WaFa/gXINRQqBPCH1eH9Ucu08QviOCBCaQIlepJArOVpW3rpQHP+E2YdStbdV2Uzc1qB6KWWzOA=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_redDrone2: azer
+        m_redDrone3: azeraz
+        m_redDrone4: <RSAKeyValue><Modulus>e5OQgq/KsWuS0fTMDD034vWur5dMg61gsceTsWcR8bDdRryNJe+dkB2B0OXB4X7rTlNunY8RRv3yfAqdjpJoIDajntZcKIYSl/ZoQ2I3SrwK1QURcatysRKIFd8nzr8AX0xKbCKSt9c4COGePhtGTmu+tlspjgDePiZjo6OkFPg=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_redDrone5: <RSAKeyValue><Modulus>e5OQgq/KsWuS0fTMDD034vWur5dMg61gsceTsWcR8bDdRryNJe+dkB2B0OXB4X7rTlNunY8RRv3yfAqdjpJoIDajntZcKIYSl/ZoQ2I3SrwK1QURcatysRKIFd8nzr8AX0xKbCKSt9c4COGePhtGTmu+tlspjgDePiZjo6OkFPg=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_blueDrone0Stricker: dfsqd
+        m_blueDrone1: zer
+        m_blueDrone2: dqfd
+        m_blueDrone3: dfsdg
+        m_blueDrone4: g
+        m_blueDrone5: bv
+      m_data: 009151e31328c3d6e9d8237f64ebb49e8dfd4ef9132b0f2f365900f70c351416213e22fce38b8afb9ef320bec359204543a69e534a03ebc5ee09e8c6e298ccb5243803d56c0c3fd7b559a15afe05c835142a04f087d5e1fd51cbb4f10be23820426902257a9240ace5695b7ae94073fe13661d4ad6dd576533735a81e8a596cce09151e31328c3d6e9d8237f64ebb49e8dfd4ef9132b0f2f365900f70c351416213e22fce38b8afb9ef320bec359204543a69e534a03ebc5ee09e8c6e298ccb5243803d56c0c3fd7b559a15afe05c835142a04f087d5e1fd51cbb4f10be23820426902257a9240ace5695b7ae94073fe13661d4ad6dd576533735a81e8a596cce0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007b939082afcab16b92d1f4cc0c3d37e2f5aeaf974c83ad60b1c793b16711f1b0dd46bc8d25ef9d901d81d0e5c1e17eeb4e536e9d8f1146fdf27c0a9d8e92682036a39ed65c28861297f6684362374abc0ad5051171ab72b1128815df27cebf005f4c4a6c2292b7d73808e19e3e1b464e6bbeb65b298e00de3e2663a3a3a414f87b939082afcab16b92d1f4cc0c3d37e2f5aeaf974c83ad60b1c793b16711f1b0dd46bc8d25ef9d901d81d0e5c1e17eeb4e536e9d8f1146fdf27c0a9d8e92682036a39ed65c28861297f6684362374abc0ad5051171ab72b1128815df27cebf005f4c4a6c2292b7d73808e19e3e1b464e6bbeb65b298e00de3e2663a3a3a414f8000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      m_parseData:
+        m_redDrone0Stricker: <RSAKeyValue><Modulus>kVHjEyjD1unYI39k67Sejf1O+RMrDy82WQD3DDUUFiE+Ivzji4r7nvMgvsNZIEVDpp5TSgPrxe4J6MbimMy1JDgD1WwMP9e1WaFa/gXINRQqBPCH1eH9Ucu08QviOCBCaQIlepJArOVpW3rpQHP+E2YdStbdV2Uzc1qB6KWWzOA=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_redDrone1: <RSAKeyValue><Modulus>kVHjEyjD1unYI39k67Sejf1O+RMrDy82WQD3DDUUFiE+Ivzji4r7nvMgvsNZIEVDpp5TSgPrxe4J6MbimMy1JDgD1WwMP9e1WaFa/gXINRQqBPCH1eH9Ucu08QviOCBCaQIlepJArOVpW3rpQHP+E2YdStbdV2Uzc1qB6KWWzOA=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_redDrone2: <RSAKeyValue><Modulus>AA==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_redDrone3: <RSAKeyValue><Modulus>AA==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_redDrone4: <RSAKeyValue><Modulus>e5OQgq/KsWuS0fTMDD034vWur5dMg61gsceTsWcR8bDdRryNJe+dkB2B0OXB4X7rTlNunY8RRv3yfAqdjpJoIDajntZcKIYSl/ZoQ2I3SrwK1QURcatysRKIFd8nzr8AX0xKbCKSt9c4COGePhtGTmu+tlspjgDePiZjo6OkFPg=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_redDrone5: <RSAKeyValue><Modulus>e5OQgq/KsWuS0fTMDD034vWur5dMg61gsceTsWcR8bDdRryNJe+dkB2B0OXB4X7rTlNunY8RRv3yfAqdjpJoIDajntZcKIYSl/ZoQ2I3SrwK1QURcatysRKIFd8nzr8AX0xKbCKSt9c4COGePhtGTmu+tlspjgDePiZjo6OkFPg=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_blueDrone0Stricker: <RSAKeyValue><Modulus>AA==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_blueDrone1: <RSAKeyValue><Modulus>AA==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_blueDrone2: <RSAKeyValue><Modulus>AA==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_blueDrone3: <RSAKeyValue><Modulus>AA==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_blueDrone4: <RSAKeyValue><Modulus>AA==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+        m_blueDrone5: <RSAKeyValue><Modulus>AA==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>
+      m_hasFixedSize: 1
+      m_debugBytesSize: 1537
+  m_tryToCatch: 0
+--- !u!4 &155506989
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155506987}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &330585543
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 330585546}
+  - component: {fileID: 330585545}
+  - component: {fileID: 330585544}
+  - component: {fileID: 330585547}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &330585544
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+--- !u!20 &330585545
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &330585546
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &330585547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 1
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
+--- !u!1 &410087039
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 410087041}
+  - component: {fileID: 410087040}
+  - component: {fileID: 410087042}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &410087040
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410087039}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 1
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 2
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 5000
+  m_UseColorTemperature: 1
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &410087041
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410087039}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &410087042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410087039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 1
+--- !u!1 &832575517
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 832575519}
+  - component: {fileID: 832575518}
+  m_Layer: 0
+  m_Name: Global Volume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &832575518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832575517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: a6560a915ef98420e9faacc1c7438823, type: 2}
+--- !u!4 &832575519
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832575517}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1660057539 &9223372036854775807
+SceneRoots:
+  m_ObjectHideFlags: 0
+  m_Roots:
+  - {fileID: 330585546}
+  - {fileID: 410087041}
+  - {fileID: 832575519}
+  - {fileID: 155506989}

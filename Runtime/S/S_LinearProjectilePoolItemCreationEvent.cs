@@ -6,7 +6,7 @@ using UnityEngine;
 public struct S_LinearProjectilePoolItemCreationEvent
 {
     public byte m_poolId;
-    public int m_poolItemIndex;
+    public uint m_poolItemIndex;
     public ulong m_serverUtcNowTicks;
     public Vector3 m_startPosition;
     public Quaternion m_startRotation;
