@@ -8,8 +8,8 @@ public class CPS_DroneSoccerMatchStaticInformation : AbstractCategoryBytesParsab
     public override void GetCopy(S_DroneSoccerMatchStaticInformation source, out S_DroneSoccerMatchStaticInformation copy)
     {
         copy = new S_DroneSoccerMatchStaticInformation();
-        copy.m_maxTimingOfSet = source.m_maxTimingOfSet;
-        copy.m_maxTimingOfMatch = source.m_maxTimingOfMatch;
+        copy.m_maxTimingOfSetInSeconds = source.m_maxTimingOfSetInSeconds;
+        copy.m_maxTimingOfMatchInSeconds = source.m_maxTimingOfMatchInSeconds;
         copy.m_numberOfSetsToWinMatch = source.m_numberOfSetsToWinMatch;
         copy.m_numberOfPointsToForceWinSet = source.m_numberOfPointsToForceWinSet;
         copy.m_arenaWidthMeter = source.m_arenaWidthMeter;
@@ -35,8 +35,8 @@ public class CPS_DroneSoccerMatchStaticInformation : AbstractCategoryBytesParsab
     {
         bytes = new byte[m_bytesSize];
         bytes[0] = category255;
-        BitConverter.GetBytes(toParse.m_maxTimingOfSet).CopyTo(bytes, 1);
-        BitConverter.GetBytes(toParse.m_maxTimingOfMatch).CopyTo(bytes, 5);
+        BitConverter.GetBytes(toParse.m_maxTimingOfSetInSeconds).CopyTo(bytes, 1);
+        BitConverter.GetBytes(toParse.m_maxTimingOfMatchInSeconds).CopyTo(bytes, 5);
         BitConverter.GetBytes(toParse.m_numberOfSetsToWinMatch).CopyTo(bytes, 9);
         BitConverter.GetBytes(toParse.m_numberOfPointsToForceWinSet).CopyTo(bytes, 13);
         BitConverter.GetBytes(toParse.m_arenaWidthMeter).CopyTo(bytes, 17);
@@ -55,8 +55,8 @@ public class CPS_DroneSoccerMatchStaticInformation : AbstractCategoryBytesParsab
     public override void Randomize(S_DroneSoccerMatchStaticInformation source, out S_DroneSoccerMatchStaticInformation copy)
     {
         GetCopy(source, out copy);
-        copy.m_maxTimingOfSet = UnityEngine.Random.Range(10f, 100f);
-        copy.m_maxTimingOfMatch = UnityEngine.Random.Range(10f, 100f);
+        copy.m_maxTimingOfSetInSeconds = UnityEngine.Random.Range(10f, 100f);
+        copy.m_maxTimingOfMatchInSeconds = UnityEngine.Random.Range(10f, 100f);
         copy.m_numberOfSetsToWinMatch = UnityEngine.Random.Range(3f, 10f);
         copy.m_numberOfPointsToForceWinSet = UnityEngine.Random.Range(3f, 10f);
         copy.m_arenaWidthMeter = UnityEngine.Random.Range(5f, 10f);
@@ -76,8 +76,8 @@ public class CPS_DroneSoccerMatchStaticInformation : AbstractCategoryBytesParsab
     {
         category255= bytes[0];
         fromBytes = new S_DroneSoccerMatchStaticInformation();
-        fromBytes.m_maxTimingOfSet = BitConverter.ToSingle(bytes, 1);
-        fromBytes.m_maxTimingOfMatch = BitConverter.ToSingle(bytes, 5);
+        fromBytes.m_maxTimingOfSetInSeconds = BitConverter.ToSingle(bytes, 1);
+        fromBytes.m_maxTimingOfMatchInSeconds = BitConverter.ToSingle(bytes, 5);
         fromBytes.m_numberOfSetsToWinMatch = BitConverter.ToSingle(bytes, 9);
         fromBytes.m_numberOfPointsToForceWinSet = BitConverter.ToSingle(bytes, 13);
         fromBytes.m_arenaWidthMeter = BitConverter.ToSingle(bytes, 17);

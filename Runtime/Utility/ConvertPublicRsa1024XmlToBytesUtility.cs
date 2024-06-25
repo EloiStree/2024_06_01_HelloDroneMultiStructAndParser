@@ -2,12 +2,12 @@
 using System.Security.Cryptography;
 using System.Text;
 
-public class ConvertPublicRsaToBytesUtility {
+public class ConvertPublicRsa1024XmlToBytesUtility {
 
 
 
 
-    public static void ParsePublicRsaKeyToBytesWithModule(string publicRsaKey, out byte[] publicKeyBytes)
+    public static void ParsePublicRsaToBytesWithModule(string publicRsaKey, out byte[] publicKeyBytes)
     {
         RSAParameters rsaParams;
         using (var rsa = RSA.Create())
@@ -22,7 +22,7 @@ public class ConvertPublicRsaToBytesUtility {
         Buffer.BlockCopy(modulus, 0, publicKeyBytes, 0, modulus.Length);
         Buffer.BlockCopy(exponent, 0, publicKeyBytes, modulus.Length, exponent.Length);
     }
-    public static void ParsePublicRsaKeyToBytesWithoutModule(string publicRsaKey, out byte[] publicKeyBytes)
+    public static void ParsePublicRsaToBytesWithoutModule(string publicRsaKey, out byte[] publicKeyBytes)
     {
         try { 
         if(string.IsNullOrWhiteSpace(publicRsaKey)){

@@ -63,18 +63,18 @@ public class CPS_DroneSoccerPublicXmlRsaKey1024Claim
 
     public override void Parse(byte category255, S_DroneSoccerPublicXmlRsaKey1024Claim toParse, out byte[] bytes)
     {
-        ConvertPublicRsaToBytesUtility.ParsePublicRsaKeyToBytesWithoutModule(toParse.m_redDrone0Stricker, out byte[] redDrone0Stricker);
-        ConvertPublicRsaToBytesUtility.ParsePublicRsaKeyToBytesWithoutModule(toParse.m_redDrone1, out byte[] redDrone1);
-        ConvertPublicRsaToBytesUtility.ParsePublicRsaKeyToBytesWithoutModule(toParse.m_redDrone2, out byte[] redDrone2);
-        ConvertPublicRsaToBytesUtility.ParsePublicRsaKeyToBytesWithoutModule(toParse.m_redDrone3, out byte[] redDrone3);
-        ConvertPublicRsaToBytesUtility.ParsePublicRsaKeyToBytesWithoutModule(toParse.m_redDrone4, out byte[] redDrone4);
-        ConvertPublicRsaToBytesUtility.ParsePublicRsaKeyToBytesWithoutModule(toParse.m_redDrone5, out byte[] redDrone5);
-        ConvertPublicRsaToBytesUtility.ParsePublicRsaKeyToBytesWithoutModule(toParse.m_blueDrone0Stricker, out byte[] blueDrone0Stricker);
-        ConvertPublicRsaToBytesUtility.ParsePublicRsaKeyToBytesWithoutModule(toParse.m_blueDrone1, out byte[] blueDrone1);
-        ConvertPublicRsaToBytesUtility.ParsePublicRsaKeyToBytesWithoutModule(toParse.m_blueDrone2, out byte[] blueDrone2);
-        ConvertPublicRsaToBytesUtility.ParsePublicRsaKeyToBytesWithoutModule(toParse.m_blueDrone3, out byte[] blueDrone3);
-        ConvertPublicRsaToBytesUtility.ParsePublicRsaKeyToBytesWithoutModule(toParse.m_blueDrone4, out byte[] blueDrone4);
-        ConvertPublicRsaToBytesUtility.ParsePublicRsaKeyToBytesWithoutModule(toParse.m_blueDrone5, out byte[] blueDrone5);
+        ConvertPublicRsa1024XmlToBytesUtility.ParsePublicRsaToBytesWithoutModule(toParse.m_redDrone0Stricker, out byte[] redDrone0Stricker);
+        ConvertPublicRsa1024XmlToBytesUtility.ParsePublicRsaToBytesWithoutModule(toParse.m_redDrone1, out byte[] redDrone1);
+        ConvertPublicRsa1024XmlToBytesUtility.ParsePublicRsaToBytesWithoutModule(toParse.m_redDrone2, out byte[] redDrone2);
+        ConvertPublicRsa1024XmlToBytesUtility.ParsePublicRsaToBytesWithoutModule(toParse.m_redDrone3, out byte[] redDrone3);
+        ConvertPublicRsa1024XmlToBytesUtility.ParsePublicRsaToBytesWithoutModule(toParse.m_redDrone4, out byte[] redDrone4);
+        ConvertPublicRsa1024XmlToBytesUtility.ParsePublicRsaToBytesWithoutModule(toParse.m_redDrone5, out byte[] redDrone5);
+        ConvertPublicRsa1024XmlToBytesUtility.ParsePublicRsaToBytesWithoutModule(toParse.m_blueDrone0Stricker, out byte[] blueDrone0Stricker);
+        ConvertPublicRsa1024XmlToBytesUtility.ParsePublicRsaToBytesWithoutModule(toParse.m_blueDrone1, out byte[] blueDrone1);
+        ConvertPublicRsa1024XmlToBytesUtility.ParsePublicRsaToBytesWithoutModule(toParse.m_blueDrone2, out byte[] blueDrone2);
+        ConvertPublicRsa1024XmlToBytesUtility.ParsePublicRsaToBytesWithoutModule(toParse.m_blueDrone3, out byte[] blueDrone3);
+        ConvertPublicRsa1024XmlToBytesUtility.ParsePublicRsaToBytesWithoutModule(toParse.m_blueDrone4, out byte[] blueDrone4);
+        ConvertPublicRsa1024XmlToBytesUtility.ParsePublicRsaToBytesWithoutModule(toParse.m_blueDrone5, out byte[] blueDrone5);
         bytes = new byte[m_bytesSize];
         bytes[0] = category255;
         Buffer.BlockCopy(redDrone0Stricker,     0, bytes, 1, 128);
@@ -94,18 +94,18 @@ public class CPS_DroneSoccerPublicXmlRsaKey1024Claim
     public override void Randomize(S_DroneSoccerPublicXmlRsaKey1024Claim source, out S_DroneSoccerPublicXmlRsaKey1024Claim copy)
     {
         copy = new S_DroneSoccerPublicXmlRsaKey1024Claim();
-        copy.m_redDrone0Stricker = ConvertPublicRsaToBytesUtility.GetRandomPublicRsaKey();
-        copy.m_redDrone1 = ConvertPublicRsaToBytesUtility.GetRandomPublicRsaKey();
-        copy.m_redDrone2 = ConvertPublicRsaToBytesUtility.GetRandomPublicRsaKey();
-        copy.m_redDrone3 = ConvertPublicRsaToBytesUtility.GetRandomPublicRsaKey();
-        copy.m_redDrone4 = ConvertPublicRsaToBytesUtility.GetRandomPublicRsaKey();
-        copy.m_redDrone5 = ConvertPublicRsaToBytesUtility.GetRandomPublicRsaKey();
-        copy.m_blueDrone0Stricker = ConvertPublicRsaToBytesUtility.GetRandomPublicRsaKey();
-        copy.m_blueDrone1 = ConvertPublicRsaToBytesUtility.GetRandomPublicRsaKey();
-        copy.m_blueDrone2 = ConvertPublicRsaToBytesUtility.GetRandomPublicRsaKey();
-        copy.m_blueDrone3 = ConvertPublicRsaToBytesUtility.GetRandomPublicRsaKey();
-        copy.m_blueDrone4 = ConvertPublicRsaToBytesUtility.GetRandomPublicRsaKey();
-        copy.m_blueDrone5 = ConvertPublicRsaToBytesUtility.GetRandomPublicRsaKey();
+        copy.m_redDrone0Stricker = ConvertPublicRsa1024XmlToBytesUtility.GetRandomPublicRsaKey();
+        copy.m_redDrone1 = ConvertPublicRsa1024XmlToBytesUtility.GetRandomPublicRsaKey();
+        copy.m_redDrone2 = ConvertPublicRsa1024XmlToBytesUtility.GetRandomPublicRsaKey();
+        copy.m_redDrone3 = ConvertPublicRsa1024XmlToBytesUtility.GetRandomPublicRsaKey();
+        copy.m_redDrone4 = ConvertPublicRsa1024XmlToBytesUtility.GetRandomPublicRsaKey();
+        copy.m_redDrone5 = ConvertPublicRsa1024XmlToBytesUtility.GetRandomPublicRsaKey();
+        copy.m_blueDrone0Stricker = ConvertPublicRsa1024XmlToBytesUtility.GetRandomPublicRsaKey();
+        copy.m_blueDrone1 = ConvertPublicRsa1024XmlToBytesUtility.GetRandomPublicRsaKey();
+        copy.m_blueDrone2 = ConvertPublicRsa1024XmlToBytesUtility.GetRandomPublicRsaKey();
+        copy.m_blueDrone3 = ConvertPublicRsa1024XmlToBytesUtility.GetRandomPublicRsaKey();
+        copy.m_blueDrone4 = ConvertPublicRsa1024XmlToBytesUtility.GetRandomPublicRsaKey();
+        copy.m_blueDrone5 = ConvertPublicRsa1024XmlToBytesUtility.GetRandomPublicRsaKey();
     }
 
     public bool TryParse(string text, out S_DroneSoccerPublicXmlRsaKey1024Claim paresed)
@@ -151,7 +151,7 @@ public class CPS_DroneSoccerPublicXmlRsaKey1024Claim
         {
             byte[] b128 = new byte[128];
             Buffer.BlockCopy(bytes, i, b128, 0, 128);
-            ConvertPublicRsaToBytesUtility.ParseBytesToPublicRsaKey(b128, out string publicRsaKey);
+            ConvertPublicRsa1024XmlToBytesUtility.ParseBytesToPublicRsaKey(b128, out string publicRsaKey);
             publicRsaKeys.Add(publicRsaKey);
         }
         if (publicRsaKeys.Count >= 1) {  fromBytes.m_redDrone0Stricker = publicRsaKeys[0]; }

@@ -3,8 +3,8 @@
 [System.Serializable]
 public struct S_DroneSoccerMatchStaticInformation {
     [Header("Match Info")]
-    public float m_maxTimingOfSet;//300 seconds
-    public float m_maxTimingOfMatch;//15 minutes
+    public float m_maxTimingOfSetInSeconds;//300 seconds
+    public float m_maxTimingOfMatchInSeconds;//15 minutes
     public float m_numberOfSetsToWinMatch;//2 sets
     [Tooltip("If a team reach this points, the set is won")]
     public float m_numberOfPointsToForceWinSet;//99 points
