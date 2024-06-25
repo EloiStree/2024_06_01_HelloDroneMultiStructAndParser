@@ -2,10 +2,10 @@
 using UnityEngine;
 
 [System.Serializable]
-public class CPS_DroneSoccerBallState : AbstractCategoryBytesParsable<S_DroneSoccerBallState>
+public class CPS_DroneSoccerBallPosition : AbstractCategoryBytesParsable<S_DroneSoccerBallPosition>
 {
     public int m_size => 1 + 8 + 3 * 2 + 3 ;
-    public override void Parse(byte category255, S_DroneSoccerBallState toParse, out byte[] bytes)
+    public override void Parse(byte category255, S_DroneSoccerBallPosition toParse, out byte[] bytes)
     {
         ulong serverTickTime = toParse.m_dateTimeUtcTick;
         Vector3 e = toParse.m_rotation.eulerAngles;
@@ -29,10 +29,10 @@ public class CPS_DroneSoccerBallState : AbstractCategoryBytesParsable<S_DroneSoc
         return (short)Mathf.Clamp(value, short.MinValue, short.MaxValue);
     }
 
-    public override bool TryParse(byte[] bytes, out byte category255, out S_DroneSoccerBallState fromBytes)
+    public override bool TryParse(byte[] bytes, out byte category255, out S_DroneSoccerBallPosition fromBytes)
     {
         category255 = bytes[0];
-        fromBytes = new S_DroneSoccerBallState();
+        fromBytes = new S_DroneSoccerBallPosition();
         fromBytes.m_dateTimeUtcTick = BitConverter.ToUInt64(bytes, 1);
         fromBytes.m_position.x = BitConverter.ToInt16(bytes, 9);
         fromBytes.m_position.y = BitConverter.ToInt16(bytes, 11);
@@ -51,7 +51,7 @@ public class CPS_DroneSoccerBallState : AbstractCategoryBytesParsable<S_DroneSoc
         bytesSize = m_size;
     }
 
-    public override void Randomize(S_DroneSoccerBallState source, out S_DroneSoccerBallState copy)
+    public override void Randomize(S_DroneSoccerBallPosition source, out S_DroneSoccerBallPosition copy)
     {
         GetCopy(source, out copy);
         copy.m_dateTimeUtcTick = (ulong)UnityEngine.Random.Range(int.MinValue, int.MaxValue);
@@ -60,9 +60,9 @@ public class CPS_DroneSoccerBallState : AbstractCategoryBytesParsable<S_DroneSoc
            
     }
 
-    public override void GetCopy(S_DroneSoccerBallState source, out S_DroneSoccerBallState copy)
+    public override void GetCopy(S_DroneSoccerBallPosition source, out S_DroneSoccerBallPosition copy)
     {
-        copy = new S_DroneSoccerBallState();
+        copy = new S_DroneSoccerBallPosition();
         copy.m_dateTimeUtcTick = source.m_dateTimeUtcTick;
         copy.m_position = source.m_position;
         copy.m_rotation = source.m_rotation;

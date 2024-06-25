@@ -11,7 +11,7 @@ public class TDD_PS_ParsingMono : MonoBehaviour
     public class Debug { 
         public CPS_NetworkGameFramePushTiming gameNetworkFrame;
         public CPS_DroneSoccerBallGoals ballGoalInfo;
-        public CPS_DroneSoccerBallState ballStatePosition;
+        public CPS_DroneSoccerBallPosition ballStatePosition;
         public CPS_DroneSoccerPositions positionOfDrones;
         
         public CPS_DroneSoccerTimeValue timeState;

@@ -85,7 +85,7 @@ public class CPS_DroneSoccerPositions : AbstractCategoryBytesParsable<S_DroneSoc
         bytesSize = m_bytesSize;
     }
 
-    CPS_DronePositionCompressed p = new CPS_DronePositionCompressed();
+    PS_DronePositionCompressed p = new PS_DronePositionCompressed();
     public override void Randomize(S_DroneSoccerPositions source, out S_DroneSoccerPositions copy)
     {
         GetCopy(source, out copy);

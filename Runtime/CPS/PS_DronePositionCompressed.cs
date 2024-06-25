@@ -1,7 +1,7 @@
 ﻿using System;
 
 [System.Serializable]
-public class CPS_DronePositionCompressed : I_BytesParsable< S_DronePositionCompressed>, I_ItemCopyable<S_DronePositionCompressed>, I_ItemRandomizable<S_DronePositionCompressed>
+public class PS_DronePositionCompressed : I_BytesParsable< S_DronePositionCompressed>, I_ItemCopyable<S_DronePositionCompressed>, I_ItemRandomizable<S_DronePositionCompressed>
 {
     public int m_bytesSize => 9;
     public void HasFixedSize(out bool hasFixedSize, out int bytesSize)
