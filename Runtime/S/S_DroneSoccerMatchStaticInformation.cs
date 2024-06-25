@@ -16,7 +16,7 @@ public struct S_DroneSoccerMatchStaticInformation {
     public float m_goalDistanceOfCenterMeter;//4 meters+
     public float m_goalCenterHeightMeter;//3 meters
     public float m_goalInnerRadiusMeter;// 60cm+
-    public float m_goalOutterRadiusMeter;///70cm+
+    public float m_goalOuterRadiusMeter;///70cm+
     public float m_goalDepthMeter;//around 5-20 cm
     public float m_droneSphereRadiusMeter;//40cm 0.4 meter
 
