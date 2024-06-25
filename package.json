@@ -1,0 +1,23 @@
+
+{                                                                                
+  "name": "be.eloistree.dronemultistructandparser",                              
+  "displayName": "Hello Drone Multi Struct And Parser",                        
+  "version": "0.0.1",                         
+  "unity": "2018.1",                             
+  "unityRelease": "",                             
+  "description": "Package with the struct of data to share between client and server and parsable in binary.",                         
+  "keywords": ["Script","Tool"],                       
+  "dependencies":{},     
+  "relatedPackages":{},     
+  "samples" : [],     
+  "author" : {
+"name":"",
+"mail":"",
+"url":""},     
+  "repository":{
+"type":"Git",
+"url":"https://github.com/EloiStree/2024_06_25_HelloDroneMultiStructAndParser.git",
+"footprint":"",
+"revision":""},     
+  "category": "Script"                   
+} 
