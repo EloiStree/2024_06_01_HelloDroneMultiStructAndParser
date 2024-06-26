@@ -26,7 +26,7 @@ public class PullOfNetworkFromBytesMono : MonoBehaviour
         if( bytes==null || bytes.Length == 0) return;
         byte bytesType = bytes[0];
         m_lastByteType = bytesType;
-        m_lastReceivedString = DateTime.UtcNow.ToString("HH:mm:ss.fff") + " " + bytesType.ToString() + " " + bytes.Length.ToString() + " bytes";
+        m_lastReceivedString = DateTime.Now.ToString("HH:mm:ss.fff") + " " + bytesType.ToString() + " " + bytes.Length.ToString() + " bytes";
 
         if (m_lastByteType == m_bytePerParsingType.m_data.m_byte_serverFrameTime) { 
         

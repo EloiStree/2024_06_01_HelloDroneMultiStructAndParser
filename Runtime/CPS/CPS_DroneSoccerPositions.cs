@@ -29,9 +29,9 @@ public class CPS_DroneSoccerPositions : AbstractCategoryBytesParsable<S_DroneSoc
     private void GetByteAt(byte[] b, int index, ref S_DronePositionCompressed drone)
     {
 
-        BitConverter.GetBytes(drone.m_localPositionX).CopyTo(b, index);
-        BitConverter.GetBytes(drone.m_localPositionY).CopyTo(b, index + 2);
-        BitConverter.GetBytes(drone.m_localPositionZ).CopyTo(b, index + 4);
+        BitConverter.GetBytes(drone.m_localPositionXFromCenter).CopyTo(b, index);
+        BitConverter.GetBytes(drone.m_localPositionYFromGround).CopyTo(b, index + 2);
+        BitConverter.GetBytes(drone.m_localPositionZFromCenter).CopyTo(b, index + 4);
         b[index + 6] = drone.m_eulerAngleX;
         b[index + 7] = drone.m_eulerAngleY;
         b[index + 8] = drone.m_eulerAngleZ;
@@ -70,9 +70,9 @@ public class CPS_DroneSoccerPositions : AbstractCategoryBytesParsable<S_DroneSoc
 
 
         position = new S_DronePositionCompressed();
-        position.m_localPositionX = BitConverter.ToInt16(bytes, index);
-        position.m_localPositionY = BitConverter.ToInt16(bytes, index + 2);
-        position.m_localPositionZ = BitConverter.ToInt16(bytes, index + 4);
+        position.m_localPositionXFromCenter = BitConverter.ToInt16(bytes, index);
+        position.m_localPositionYFromGround = BitConverter.ToUInt16(bytes, index + 2);
+        position.m_localPositionZFromCenter = BitConverter.ToInt16(bytes, index + 4);
         position.m_eulerAngleX = bytes[index + 6];
         position.m_eulerAngleY = bytes[index + 7];
         position.m_eulerAngleZ = bytes[index + 8];

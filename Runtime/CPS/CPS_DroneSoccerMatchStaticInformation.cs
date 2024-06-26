@@ -63,7 +63,7 @@ public class CPS_DroneSoccerMatchStaticInformation : AbstractCategoryBytesParsab
         copy.m_arenaHeightMeter = UnityEngine.Random.Range(5f, 10f);
         copy.m_arenaDepthMeter = UnityEngine.Random.Range(5f, 10f);
         copy.m_goalDistanceOfCenterMeter = UnityEngine.Random.Range(1f, 3f);
-        copy.m_goalCenterHeightMeter = UnityEngine.Random.Range(0f, 3f);
+        copy.m_goalCenterHeightMeter = UnityEngine.Random.Range(1f, 3f);
         copy.m_goalInnerRadiusMeter = UnityEngine.Random.Range(0.4f, 0.5f);
         copy.m_goalOuterRadiusMeter = UnityEngine.Random.Range(0.5f, 0.65f);
         copy.m_goalDepthMeter = UnityEngine.Random.Range(0.1f,0.2f);

@@ -7,18 +7,18 @@
 [System.Serializable]
 public struct S_DronePositionCompressed
 {
-    public short m_localPositionX;
-    public short m_localPositionY;
-    public short m_localPositionZ;
+    public short m_localPositionXFromCenter;
+    public ushort m_localPositionYFromGround;
+    public short m_localPositionZFromCenter;
     public byte m_eulerAngleX;
     public byte m_eulerAngleY;
     public byte m_eulerAngleZ;
 
     public void SetPosition(Vector3 localPosition)
     {
-        m_localPositionX = (short)(Mathf.Clamp(localPosition.x * 1000f, short.MinValue, short.MaxValue));
-        m_localPositionY = (short)(Mathf.Clamp(localPosition.y * 1000f, short.MinValue, short.MaxValue));
-        m_localPositionZ = (short)(Mathf.Clamp(localPosition.z * 1000f, short.MinValue, short.MaxValue));
+        m_localPositionXFromCenter = (short)(Mathf.Clamp(localPosition.x * 1000f, short.MinValue, short.MaxValue));
+        m_localPositionYFromGround = (ushort)(Mathf.Clamp(localPosition.y * 1000f, 0, ushort.MaxValue));
+        m_localPositionZFromCenter = (short)(Mathf.Clamp(localPosition.z * 1000f, short.MinValue, short.MaxValue));
     }
     public void SetRotation(Quaternion localRotation)
     {
@@ -38,7 +38,7 @@ public struct S_DronePositionCompressed
     }
     public Vector3 GetPosition()
     {
-        return new Vector3(m_localPositionX/1000f, m_localPositionY / 1000f, m_localPositionZ / 1000f);
+        return new Vector3(m_localPositionXFromCenter/1000f, m_localPositionYFromGround / 1000f, m_localPositionZFromCenter / 1000f);
     }
     public Quaternion GetRotation()
     {
@@ -46,6 +46,12 @@ public struct S_DronePositionCompressed
         Convert255AngleTo360(m_eulerAngleY, out byte y);
         Convert255AngleTo360(m_eulerAngleZ, out byte z);
         return Quaternion.Euler(x, y,z);
+    }
+
+    public void GetPosition(out Vector3 position, out Quaternion rotation)
+    {
+        position = GetPosition();
+        rotation = GetRotation();
     }
 
    

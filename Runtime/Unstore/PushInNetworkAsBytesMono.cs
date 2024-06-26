@@ -15,7 +15,6 @@ public class PushInNetworkAsBytesMono : MonoBehaviour
             m_bytePerParsingType.m_data.m_byte_soccerBallPosition,
             value, out byte[] bytes);
         m_pushParseByte.Invoke(bytes);
-        Debug.Log("PushIn( S_DroneSoccerBallPosition  )" + bytes.Length);
     }
     public void PushIn( S_DroneSoccerBallGoals                  value){
         CPS.CPS_DroneSoccerBallGoals.Parse(

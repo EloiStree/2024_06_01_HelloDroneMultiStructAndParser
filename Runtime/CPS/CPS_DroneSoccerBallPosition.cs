@@ -17,9 +17,9 @@ public class CPS_DroneSoccerBallPosition : AbstractCategoryBytesParsable<S_Drone
         bytes = new byte[m_size];
         bytes[0] = category255;
         BitConverter.GetBytes(serverTickTime).CopyTo(bytes, 1);
-        BitConverter.GetBytes(ClampShort(toParse.m_position.x)).CopyTo(bytes, 9);
-        BitConverter.GetBytes(ClampShort(toParse.m_position.y)).CopyTo(bytes, 11);
-        BitConverter.GetBytes(ClampShort(toParse.m_position.z)).CopyTo(bytes, 13);
+        BitConverter.GetBytes(ClampShort(toParse.m_position.x * 1000f)).CopyTo(bytes, 9);
+        BitConverter.GetBytes(ClampShort(toParse.m_position.y * 1000f)).CopyTo(bytes, 11);
+        BitConverter.GetBytes(ClampShort(toParse.m_position.z * 1000f)).CopyTo(bytes, 13);
         bytes[15] = eulerX;
         bytes[16] = eulerY;
         bytes[17] = eulerZ;
@@ -34,9 +34,9 @@ public class CPS_DroneSoccerBallPosition : AbstractCategoryBytesParsable<S_Drone
         category255 = bytes[0];
         fromBytes = new S_DroneSoccerBallPosition();
         fromBytes.m_dateTimeUtcTick = BitConverter.ToUInt64(bytes, 1);
-        fromBytes.m_position.x = BitConverter.ToInt16(bytes, 9);
-        fromBytes.m_position.y = BitConverter.ToInt16(bytes, 11);
-        fromBytes.m_position.z = BitConverter.ToInt16(bytes, 13);
+        fromBytes.m_position.x = BitConverter.ToInt16(bytes, 9)/1000f;
+        fromBytes.m_position.y = BitConverter.ToInt16(bytes, 11) / 1000f;
+        fromBytes.m_position.z = BitConverter.ToInt16(bytes, 13) / 1000f;
         fromBytes.m_rotation = Quaternion.Euler(
             (bytes[15] / 255f) * 360f,
             (bytes[16] / 255f) * 360f,
@@ -56,6 +56,7 @@ public class CPS_DroneSoccerBallPosition : AbstractCategoryBytesParsable<S_Drone
         GetCopy(source, out copy);
         copy.m_dateTimeUtcTick = (ulong)UnityEngine.Random.Range(int.MinValue, int.MaxValue);
         copy.m_position = new Vector3(UnityEngine.Random.Range(short.MinValue, short.MaxValue), UnityEngine.Random.Range(short.MinValue, short.MaxValue), UnityEngine.Random.Range(short.MinValue, short.MaxValue));
+        copy.m_position /= 1000f;
         copy.m_rotation = Quaternion.Euler(UnityEngine.Random.Range(0, 360f), UnityEngine.Random.Range(0, 360f), UnityEngine.Random.Range(0, 360f));
            
     }
