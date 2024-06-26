@@ -13,16 +13,18 @@ public class CPS_BytePerParsingTypeMono : MonoBehaviour
 [System.Serializable]
 public class CPS_BytePerType
 {
-    public byte m_byte_dronePositions           = 10;
-    public byte m_byte_matchTimeValue           = 11;
-    public byte m_byte_soccerBallPosition       = 15;
-    public byte m_byte_pointsState              = 20;
-    public byte m_byte_indexIntegerClaim        = 60;
-    public byte m_byte_publicRsaKeyClaim        = 61;
-    public byte m_byte_publicEllipticCurveClaim = 62;
-    public byte m_byte_arenaStaticInformation         = 30;
-    public byte m_byte_soccerBallGoals          = 35;
-    public byte m_byte_projectileCreation     = 70;
-    public byte m_byte_projectileDestruction  = 71;
-    public byte m_byte_serverFrameTime        =  9;
+    public byte m_byteDronePositions           = 10;
+    public byte m_byteMatchTimeValue           = 11;
+    public byte m_byteSoccerBallPosition       = 15;
+    public byte m_bytePointsState              = 20;
+    public byte m_byteIndexIntegerClaim        = 60;
+    public byte m_bytePublicRsaKeyClaim        = 61;
+    public byte m_bytePublicEllipticCurveClaim = 62;
+    public byte m_byteArenaStaticInformation         = 30;
+    public byte m_byteSoccerBallGoals          = 35;
+    public byte m_byteProjectileCreation     = 70;
+    public byte m_byteProjectileDestruction  = 71;
+    public byte m_byteServerFrameTime        =  9;
+    public byte m_byteDoubleGuidItemSpawn     = 80;
+    public byte m_byteDoubleGuidItemDestruction  = 81;  
 }

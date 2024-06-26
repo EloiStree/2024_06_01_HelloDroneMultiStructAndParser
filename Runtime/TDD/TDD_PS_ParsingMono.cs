@@ -24,6 +24,9 @@ public class TDD_PS_ParsingMono : MonoBehaviour
         
         public CPS_DroneSoccerIndexIntegerClaim indexClaimInteger;
         public CPS_DroneSoccerPublicXmlRsaKey1024Claim rsaClaim;
+
+        public CPS_DoubleGuidItemPosition m_guidPosition;
+        public CPS_DoubleGuidItemPosition m_guidDestruction;
     }
 
 
@@ -45,6 +48,8 @@ public class TDD_PS_ParsingMono : MonoBehaviour
         Try(m_data.projectilCreated.TryParse);
         Try(m_data.gameNetworkFrame.TryParse);
         Try(m_data.destructionEvent.TryParse);
+        Try(m_data.m_guidPosition.TryParse);
+        Try(m_data.m_guidDestruction.TryParse);
     }
 
     private void Try(Action tryParse)

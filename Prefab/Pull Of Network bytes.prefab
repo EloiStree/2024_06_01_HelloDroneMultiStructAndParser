@@ -82,6 +82,50 @@ MonoBehaviour:
       m_bytes: 
     - m_category: 10
       m_bytes: 
+--- !u!1 &6225187640006066810
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 123888030529301423}
+  - component: {fileID: 2678155732722629157}
+  m_Layer: 0
+  m_Name: Relay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &123888030529301423
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6225187640006066810}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4932436255206389033}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2678155732722629157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6225187640006066810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baf0edbf9855a454eb11d35c63b04412, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7865411753029217966
 GameObject:
   m_ObjectHideFlags: 0
@@ -114,6 +158,7 @@ Transform:
   m_Children:
   - {fileID: 4177663830719274766}
   - {fileID: 4283588183248167175}
+  - {fileID: 123888030529301423}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4995025130234030782
@@ -196,7 +241,7 @@ MonoBehaviour:
       m_rotation: {x: 0, y: 0, z: 0, w: 0}
     m_ballGoals:
       m_goalDistanceOfCenterMeter: 0
-      m_goalCenterHeightMeter: 0
+      m_goalGroundHeightMeter: 0
       m_goalWidthRadiusMeter: 0
       m_goalDepthMeter: 0
       m_ballRadius: 0
@@ -204,86 +249,86 @@ MonoBehaviour:
       m_dateTimeUtcTick: 0
       m_framePushed: 0
       m_redDrone0Stricker:
-        m_localPositionX: 0
-        m_localPositionY: 0
-        m_localPositionZ: 0
+        m_localPositionXFromCenter: 0
+        m_localPositionYFromGround: 0
+        m_localPositionZFromCenter: 0
         m_eulerAngleX: 0
         m_eulerAngleY: 0
         m_eulerAngleZ: 0
       m_redDrone1:
-        m_localPositionX: 0
-        m_localPositionY: 0
-        m_localPositionZ: 0
+        m_localPositionXFromCenter: 0
+        m_localPositionYFromGround: 0
+        m_localPositionZFromCenter: 0
         m_eulerAngleX: 0
         m_eulerAngleY: 0
         m_eulerAngleZ: 0
       m_redDrone2:
-        m_localPositionX: 0
-        m_localPositionY: 0
-        m_localPositionZ: 0
+        m_localPositionXFromCenter: 0
+        m_localPositionYFromGround: 0
+        m_localPositionZFromCenter: 0
         m_eulerAngleX: 0
         m_eulerAngleY: 0
         m_eulerAngleZ: 0
       m_redDrone3:
-        m_localPositionX: 0
-        m_localPositionY: 0
-        m_localPositionZ: 0
+        m_localPositionXFromCenter: 0
+        m_localPositionYFromGround: 0
+        m_localPositionZFromCenter: 0
         m_eulerAngleX: 0
         m_eulerAngleY: 0
         m_eulerAngleZ: 0
       m_redDrone4:
-        m_localPositionX: 0
-        m_localPositionY: 0
-        m_localPositionZ: 0
+        m_localPositionXFromCenter: 0
+        m_localPositionYFromGround: 0
+        m_localPositionZFromCenter: 0
         m_eulerAngleX: 0
         m_eulerAngleY: 0
         m_eulerAngleZ: 0
       m_redDrone5:
-        m_localPositionX: 0
-        m_localPositionY: 0
-        m_localPositionZ: 0
+        m_localPositionXFromCenter: 0
+        m_localPositionYFromGround: 0
+        m_localPositionZFromCenter: 0
         m_eulerAngleX: 0
         m_eulerAngleY: 0
         m_eulerAngleZ: 0
       m_blueDrone0Stricker:
-        m_localPositionX: 0
-        m_localPositionY: 0
-        m_localPositionZ: 0
+        m_localPositionXFromCenter: 0
+        m_localPositionYFromGround: 0
+        m_localPositionZFromCenter: 0
         m_eulerAngleX: 0
         m_eulerAngleY: 0
         m_eulerAngleZ: 0
       m_blueDrone1:
-        m_localPositionX: 0
-        m_localPositionY: 0
-        m_localPositionZ: 0
+        m_localPositionXFromCenter: 0
+        m_localPositionYFromGround: 0
+        m_localPositionZFromCenter: 0
         m_eulerAngleX: 0
         m_eulerAngleY: 0
         m_eulerAngleZ: 0
       m_blueDrone2:
-        m_localPositionX: 0
-        m_localPositionY: 0
-        m_localPositionZ: 0
+        m_localPositionXFromCenter: 0
+        m_localPositionYFromGround: 0
+        m_localPositionZFromCenter: 0
         m_eulerAngleX: 0
         m_eulerAngleY: 0
         m_eulerAngleZ: 0
       m_blueDrone3:
-        m_localPositionX: 0
-        m_localPositionY: 0
-        m_localPositionZ: 0
+        m_localPositionXFromCenter: 0
+        m_localPositionYFromGround: 0
+        m_localPositionZFromCenter: 0
         m_eulerAngleX: 0
         m_eulerAngleY: 0
         m_eulerAngleZ: 0
       m_blueDrone4:
-        m_localPositionX: 0
-        m_localPositionY: 0
-        m_localPositionZ: 0
+        m_localPositionXFromCenter: 0
+        m_localPositionYFromGround: 0
+        m_localPositionZFromCenter: 0
         m_eulerAngleX: 0
         m_eulerAngleY: 0
         m_eulerAngleZ: 0
       m_blueDrone5:
-        m_localPositionX: 0
-        m_localPositionY: 0
-        m_localPositionZ: 0
+        m_localPositionXFromCenter: 0
+        m_localPositionYFromGround: 0
+        m_localPositionZFromCenter: 0
         m_eulerAngleX: 0
         m_eulerAngleY: 0
         m_eulerAngleZ: 0
