@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class SDebug_DronePositions : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class SDebug_DronePositions : MonoBehaviour
     public S_DroneSoccerMatchStaticInformation m_matchStaticInfo;
     [Header("Transforms")]
     public Transform[] m_drones;
+    public Transform[] m_setDroneSize;
+
+    public UnityEvent<Vector3> m_onDroneScale;
 
     public void SetWith(S_DroneSoccerMatchStaticInformation matchStaticInfo)
     {
@@ -16,8 +20,15 @@ public class SDebug_DronePositions : MonoBehaviour
         float r = matchStaticInfo.m_droneSphereRadiusMeter;
         for (int i = 0; i < m_drones.Length; i++)
         {
-            m_drones[i].localScale = new Vector3(r,r,r);
+            if (m_drones[i] != null)
+                m_drones[i].localScale = new Vector3(r, r, r);
         }
+        for (int i = 0; i < m_setDroneSize.Length; i++)
+        {
+            if (m_setDroneSize[i] != null)
+                m_setDroneSize[i].localScale = new Vector3(r, r, r);
+        }
+        m_onDroneScale.Invoke(new Vector3(r,r,r));
     }
 
 

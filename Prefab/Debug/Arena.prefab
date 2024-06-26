@@ -1,5 +1,48 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1316015116631071172
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5866829245098433233}
+  m_Layer: 0
+  m_Name: Follow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5866829245098433233
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316015116631071172}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6947170643132708844}
+  - {fileID: 7247554614915415197}
+  - {fileID: 840070715188352148}
+  - {fileID: 6588744432685504836}
+  - {fileID: 2634309419629030531}
+  - {fileID: 3171863018813676518}
+  - {fileID: 6521847888193987897}
+  - {fileID: 6844619183382763895}
+  - {fileID: 710115381282780165}
+  - {fileID: 4196854101439338311}
+  - {fileID: 6088950652340589717}
+  - {fileID: 959224400659528516}
+  m_Father: {fileID: 8592905962796642706}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1484640544366453024
 GameObject:
   m_ObjectHideFlags: 0
@@ -167,6 +210,7 @@ Transform:
   - {fileID: 4040386479769285774}
   - {fileID: 5775390405885604308}
   - {fileID: 753471933763043888}
+  - {fileID: 5866829245098433233}
   m_Father: {fileID: 4802934627818609333}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8860675025161974626
@@ -1313,6 +1357,90 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 188161227154267733}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &271826297548985429
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5866829245098433233}
+    m_Modifications:
+    - target: {fileID: 269445515484219485, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_toFollow
+      value: 
+      objectReference: {fileID: 1048620670607323730}
+    - target: {fileID: 759448155485906977, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 37850017af5d44c4597c0d5c840c14f2, type: 2}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8305838563668560562, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_Name
+      value: Debug Follow Lerp Drone (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 19e122d41caa8c542ae54f726db05699, type: 3}
+--- !u!4 &2634309419629030531 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+    type: 3}
+  m_PrefabInstance: {fileID: 271826297548985429}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &501003549119273562
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1411,6 +1539,90 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6467174357422959459, guid: e6b9f3975181b3146aa25bfd3e15b3ef,
     type: 3}
   m_PrefabInstance: {fileID: 501003549119273562}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &815136664784872240
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5866829245098433233}
+    m_Modifications:
+    - target: {fileID: 269445515484219485, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_toFollow
+      value: 
+      objectReference: {fileID: 7927560803909576547}
+    - target: {fileID: 759448155485906977, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 37850017af5d44c4597c0d5c840c14f2, type: 2}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8305838563668560562, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_Name
+      value: Debug Follow Lerp Drone (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 19e122d41caa8c542ae54f726db05699, type: 3}
+--- !u!4 &3171863018813676518 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+    type: 3}
+  m_PrefabInstance: {fileID: 815136664784872240}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1181886776660332055
 PrefabInstance:
@@ -1808,6 +2020,90 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1485989449812688501}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2122728658310180753
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5866829245098433233}
+    m_Modifications:
+    - target: {fileID: 269445515484219485, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_toFollow
+      value: 
+      objectReference: {fileID: 4040386479769285774}
+    - target: {fileID: 759448155485906977, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 73c79a8c5f196ea458e270787184952e, type: 2}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8305838563668560562, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_Name
+      value: Debug Follow Lerp Drone (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 19e122d41caa8c542ae54f726db05699, type: 3}
+--- !u!4 &4196854101439338311 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+    type: 3}
+  m_PrefabInstance: {fileID: 2122728658310180753}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2450080659932068009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1907,6 +2203,174 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2450080659932068009}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3027706909592568722
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5866829245098433233}
+    m_Modifications:
+    - target: {fileID: 269445515484219485, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_toFollow
+      value: 
+      objectReference: {fileID: 753471933763043888}
+    - target: {fileID: 759448155485906977, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 73c79a8c5f196ea458e270787184952e, type: 2}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8305838563668560562, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_Name
+      value: Debug Follow Lerp Drone (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 19e122d41caa8c542ae54f726db05699, type: 3}
+--- !u!4 &959224400659528516 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+    type: 3}
+  m_PrefabInstance: {fileID: 3027706909592568722}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3234654611850849346
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5866829245098433233}
+    m_Modifications:
+    - target: {fileID: 269445515484219485, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_toFollow
+      value: 
+      objectReference: {fileID: 6630296820685025317}
+    - target: {fileID: 759448155485906977, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 37850017af5d44c4597c0d5c840c14f2, type: 2}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8305838563668560562, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_Name
+      value: Debug Follow Lerp Drone (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 19e122d41caa8c542ae54f726db05699, type: 3}
+--- !u!4 &840070715188352148 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+    type: 3}
+  m_PrefabInstance: {fileID: 3234654611850849346}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3310912681596650786
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2005,6 +2469,90 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2481043867503926698, guid: 413458218c2e77c439701b985ec2d36c,
     type: 3}
   m_PrefabInstance: {fileID: 3310912681596650786}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3355635594563079379
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5866829245098433233}
+    m_Modifications:
+    - target: {fileID: 269445515484219485, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_toFollow
+      value: 
+      objectReference: {fileID: 696028146311304290}
+    - target: {fileID: 759448155485906977, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 73c79a8c5f196ea458e270787184952e, type: 2}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8305838563668560562, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_Name
+      value: Debug Follow Lerp Drone (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 19e122d41caa8c542ae54f726db05699, type: 3}
+--- !u!4 &710115381282780165 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+    type: 3}
+  m_PrefabInstance: {fileID: 3355635594563079379}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3605904045904881096
 PrefabInstance:
@@ -2402,6 +2950,90 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4524786389116526085}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4890687523391980619
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5866829245098433233}
+    m_Modifications:
+    - target: {fileID: 269445515484219485, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_toFollow
+      value: 
+      objectReference: {fileID: 1769425208188752498}
+    - target: {fileID: 759448155485906977, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 37850017af5d44c4597c0d5c840c14f2, type: 2}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8305838563668560562, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_Name
+      value: Debug Follow Lerp Drone (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 19e122d41caa8c542ae54f726db05699, type: 3}
+--- !u!4 &7247554614915415197 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+    type: 3}
+  m_PrefabInstance: {fileID: 4890687523391980619}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4991297608387845105
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2599,6 +3231,90 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1878627189637663783, guid: a1c5e300183594e49be906393a46f173,
     type: 3}
   m_PrefabInstance: {fileID: 5049013117114874882}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5125663734592835386
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5866829245098433233}
+    m_Modifications:
+    - target: {fileID: 269445515484219485, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_toFollow
+      value: 
+      objectReference: {fileID: 2889208584111106543}
+    - target: {fileID: 759448155485906977, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 37850017af5d44c4597c0d5c840c14f2, type: 2}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8305838563668560562, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_Name
+      value: Debug Follow Lerp Drone
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 19e122d41caa8c542ae54f726db05699, type: 3}
+--- !u!4 &6947170643132708844 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+    type: 3}
+  m_PrefabInstance: {fileID: 5125663734592835386}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5206122586616991320
 PrefabInstance:
@@ -2798,6 +3514,90 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5347030050069609971}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8343770146083744835
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5866829245098433233}
+    m_Modifications:
+    - target: {fileID: 269445515484219485, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_toFollow
+      value: 
+      objectReference: {fileID: 5775390405885604308}
+    - target: {fileID: 759448155485906977, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 73c79a8c5f196ea458e270787184952e, type: 2}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8305838563668560562, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_Name
+      value: Debug Follow Lerp Drone (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 19e122d41caa8c542ae54f726db05699, type: 3}
+--- !u!4 &6088950652340589717 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+    type: 3}
+  m_PrefabInstance: {fileID: 8343770146083744835}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8364983262542129988
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2896,4 +3696,256 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1878627189637663783, guid: a1c5e300183594e49be906393a46f173,
     type: 3}
   m_PrefabInstance: {fileID: 8364983262542129988}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8770674530032738721
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5866829245098433233}
+    m_Modifications:
+    - target: {fileID: 269445515484219485, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_toFollow
+      value: 
+      objectReference: {fileID: 678418672982009102}
+    - target: {fileID: 759448155485906977, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 73c79a8c5f196ea458e270787184952e, type: 2}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8305838563668560562, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_Name
+      value: Debug Follow Lerp Drone (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 19e122d41caa8c542ae54f726db05699, type: 3}
+--- !u!4 &6844619183382763895 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+    type: 3}
+  m_PrefabInstance: {fileID: 8770674530032738721}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8945458108553830802
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5866829245098433233}
+    m_Modifications:
+    - target: {fileID: 269445515484219485, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_toFollow
+      value: 
+      objectReference: {fileID: 2655290099166499362}
+    - target: {fileID: 759448155485906977, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 37850017af5d44c4597c0d5c840c14f2, type: 2}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8305838563668560562, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_Name
+      value: Debug Follow Lerp Drone (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 19e122d41caa8c542ae54f726db05699, type: 3}
+--- !u!4 &6588744432685504836 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+    type: 3}
+  m_PrefabInstance: {fileID: 8945458108553830802}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9063785618745548271
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5866829245098433233}
+    m_Modifications:
+    - target: {fileID: 269445515484219485, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_toFollow
+      value: 
+      objectReference: {fileID: 6869853943271823318}
+    - target: {fileID: 759448155485906977, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 73c79a8c5f196ea458e270787184952e, type: 2}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8305838563668560562, guid: 19e122d41caa8c542ae54f726db05699,
+        type: 3}
+      propertyPath: m_Name
+      value: Debug Follow Lerp Drone (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 19e122d41caa8c542ae54f726db05699, type: 3}
+--- !u!4 &6521847888193987897 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2831439142761560278, guid: 19e122d41caa8c542ae54f726db05699,
+    type: 3}
+  m_PrefabInstance: {fileID: 9063785618745548271}
   m_PrefabAsset: {fileID: 0}
