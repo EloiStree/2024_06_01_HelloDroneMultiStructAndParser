@@ -15,7 +15,7 @@ public class CPS_DroneSoccerBallPosition : AbstractCategoryBytesParsable<S_Drone
 
 
         bytes = new byte[m_size];
-        bytes[0] = 8;
+        bytes[0] = category255;
         BitConverter.GetBytes(serverTickTime).CopyTo(bytes, 1);
         BitConverter.GetBytes(ClampShort(toParse.m_position.x)).CopyTo(bytes, 9);
         BitConverter.GetBytes(ClampShort(toParse.m_position.y)).CopyTo(bytes, 11);
@@ -56,7 +56,7 @@ public class CPS_DroneSoccerBallPosition : AbstractCategoryBytesParsable<S_Drone
         GetCopy(source, out copy);
         copy.m_dateTimeUtcTick = (ulong)UnityEngine.Random.Range(int.MinValue, int.MaxValue);
         copy.m_position = new Vector3(UnityEngine.Random.Range(short.MinValue, short.MaxValue), UnityEngine.Random.Range(short.MinValue, short.MaxValue), UnityEngine.Random.Range(short.MinValue, short.MaxValue));
-        copy.m_rotation = Quaternion.Euler(UnityEngine.Random.Range(0, 360), UnityEngine.Random.Range(0, 360), UnityEngine.Random.Range(0, 360));
+        copy.m_rotation = Quaternion.Euler(UnityEngine.Random.Range(0, 360f), UnityEngine.Random.Range(0, 360f), UnityEngine.Random.Range(0, 360f));
            
     }
 

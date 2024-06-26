@@ -40,10 +40,10 @@ public class CPS_DroneSoccerMatchState : AbstractCategoryBytesParsable<S_DroneSo
     public override void Randomize(S_DroneSoccerMatchState source, out S_DroneSoccerMatchState copy)
     {
         GetCopy(source, out copy);
-        copy.m_redPoints =(uint) UnityEngine.Random.Range(uint.MinValue, int.MaxValue);
-        copy.m_bluePoints = (uint)UnityEngine.Random.Range(uint.MinValue, int.MaxValue);
-        copy.m_redSets = (uint)UnityEngine.Random.Range(uint.MinValue, int.MaxValue);
-        copy.m_blueSets = (uint)UnityEngine.Random.Range(uint.MinValue, int.MaxValue);
+        copy.m_redPoints =(uint) UnityEngine.Random.Range(uint.MinValue, 99);
+        copy.m_bluePoints = (uint)UnityEngine.Random.Range(uint.MinValue, 99);
+        copy.m_redSets = (uint)UnityEngine.Random.Range(uint.MinValue, 99);
+        copy.m_blueSets = (uint)UnityEngine.Random.Range(uint.MinValue, 99);
 
        
         copy.m_utcTickInSecondsWhenMatchStarted = (ulong)UnityEngine.Random.Range(int.MinValue, int.MaxValue);

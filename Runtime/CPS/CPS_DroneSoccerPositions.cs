@@ -45,18 +45,18 @@ public class CPS_DroneSoccerPositions : AbstractCategoryBytesParsable<S_DroneSoc
         fromBytes.m_dateTimeUtcTick = BitConverter.ToUInt64(bytes, 1);
         fromBytes.m_framePushed = BitConverter.ToUInt64(bytes, 9);
         int index = 17;
-        ParseD(index, ref bytes,    out fromBytes.m_redDrone0Stricker);
-        ParseD(index+9, ref bytes,  out fromBytes.m_redDrone1);
-        ParseD(index+18, ref bytes, out fromBytes.m_redDrone2);
-        ParseD(index+27, ref bytes, out fromBytes.m_redDrone3);
-        ParseD(index+36, ref bytes, out fromBytes.m_redDrone4);
-        ParseD(index+45, ref bytes, out fromBytes.m_redDrone5);
-        ParseD(index+54, ref bytes, out fromBytes.m_blueDrone0Stricker);
-        ParseD(index+63, ref bytes, out fromBytes.m_blueDrone1);
-        ParseD(index+72, ref bytes, out fromBytes.m_blueDrone2);
-        ParseD(index+81, ref bytes, out fromBytes.m_blueDrone3);
-        ParseD(index+90, ref bytes, out fromBytes.m_blueDrone4);
-        ParseD(index+99, ref bytes, out fromBytes.m_blueDrone5);
+        BytesRefIndexToDronePosition(index, ref bytes,    out fromBytes.m_redDrone0Stricker);
+        BytesRefIndexToDronePosition(index+9, ref bytes,  out fromBytes.m_redDrone1);
+        BytesRefIndexToDronePosition(index+18, ref bytes, out fromBytes.m_redDrone2);
+        BytesRefIndexToDronePosition(index+27, ref bytes, out fromBytes.m_redDrone3);
+        BytesRefIndexToDronePosition(index+36, ref bytes, out fromBytes.m_redDrone4);
+        BytesRefIndexToDronePosition(index+45, ref bytes, out fromBytes.m_redDrone5);
+        BytesRefIndexToDronePosition(index+54, ref bytes, out fromBytes.m_blueDrone0Stricker);
+        BytesRefIndexToDronePosition(index+63, ref bytes, out fromBytes.m_blueDrone1);
+        BytesRefIndexToDronePosition(index+72, ref bytes, out fromBytes.m_blueDrone2);
+        BytesRefIndexToDronePosition(index+81, ref bytes, out fromBytes.m_blueDrone3);
+        BytesRefIndexToDronePosition(index+90, ref bytes, out fromBytes.m_blueDrone4);
+        BytesRefIndexToDronePosition(index+99, ref bytes, out fromBytes.m_blueDrone5);
             
             
 
@@ -66,17 +66,17 @@ public class CPS_DroneSoccerPositions : AbstractCategoryBytesParsable<S_DroneSoc
         
     }
 
-    private void ParseD(int index, ref byte[] bytes, out S_DronePositionCompressed m_blueDrone0Stricker)
+    private void BytesRefIndexToDronePosition(int index, ref byte[] bytes, out S_DronePositionCompressed position)
     {
 
 
-        m_blueDrone0Stricker = new S_DronePositionCompressed();
-        m_blueDrone0Stricker.m_localPositionX = BitConverter.ToInt16(bytes, index);
-        m_blueDrone0Stricker.m_localPositionY = BitConverter.ToInt16(bytes, index + 2);
-        m_blueDrone0Stricker.m_localPositionZ = BitConverter.ToInt16(bytes, index + 4);
-        m_blueDrone0Stricker.m_eulerAngleX = bytes[index + 6];
-        m_blueDrone0Stricker.m_eulerAngleY = bytes[index + 7];
-        m_blueDrone0Stricker.m_eulerAngleZ = bytes[index + 8];
+        position = new S_DronePositionCompressed();
+        position.m_localPositionX = BitConverter.ToInt16(bytes, index);
+        position.m_localPositionY = BitConverter.ToInt16(bytes, index + 2);
+        position.m_localPositionZ = BitConverter.ToInt16(bytes, index + 4);
+        position.m_eulerAngleX = bytes[index + 6];
+        position.m_eulerAngleY = bytes[index + 7];
+        position.m_eulerAngleZ = bytes[index + 8];
     }
 
     public override void HasFixedSize(out bool hasFixedSize, out int bytesSize)
