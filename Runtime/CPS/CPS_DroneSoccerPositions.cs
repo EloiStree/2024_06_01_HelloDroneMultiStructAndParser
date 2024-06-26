@@ -1,6 +1,5 @@
 ﻿
 //12 time per second refresh
-using PlasticGui.WorkspaceWindow;
 using System;
 //I_BytesParsable
 [System.Serializable]
