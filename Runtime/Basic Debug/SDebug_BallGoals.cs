@@ -10,6 +10,12 @@ public class SDebug_BallGoals : MonoBehaviour
     public Transform m_goalBlue;
 
 
+    [ContextMenu("Refresh")]
+    public void Refresh() { 
+    
+        SetWith(m_ballGoals);
+    }
+
     public void SetWith(S_DroneSoccerBallGoals goals)
     {
         m_ballGoals = goals;
@@ -28,10 +34,10 @@ public class SDebug_BallGoals : MonoBehaviour
         m_goalRed.localScale = scale;
         m_goalBlue.localScale = scale;
 
-        m_goalRed.localPosition = SDebug_Relocation.RotatePointAroundPivot(position, Vector3.zero, new Vector3(0, -90, 0));
-        m_goalBlue.localPosition = SDebug_Relocation.RotatePointAroundPivot(position, Vector3.zero, new Vector3(0, 90, 0));
-        m_goalRed.localRotation = Quaternion.Euler(0, -90, 0);
-        m_goalBlue.localRotation = Quaternion.Euler(0, 90, 0);
+        m_goalRed.localPosition = SDebug_Relocation.RotatePointAroundPivot(position, Vector3.zero, new Vector3(0, 90, 0));
+        m_goalBlue.localPosition = SDebug_Relocation.RotatePointAroundPivot(position, Vector3.zero, new Vector3(0, -90, 0));
+        m_goalRed.localRotation = Quaternion.Euler(0, 90, 0);
+        m_goalBlue.localRotation = Quaternion.Euler(0,-90, 0);
 
     }
 }

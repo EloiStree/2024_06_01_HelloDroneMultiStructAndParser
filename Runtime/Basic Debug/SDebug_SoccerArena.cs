@@ -13,6 +13,14 @@ public class SDebug_SoccerArena : MonoBehaviour
     public Transform m_goalBlueInner;
     public Transform m_goalBlueOuter;
 
+
+    [ContextMenu("Refresh")]
+    public void Refresh()
+    {
+
+        SetWith(m_soccerArena);
+    }
+
     public float m_groundHeight = 0.5f;
     public void SetWith(S_DroneSoccerMatchStaticInformation arena)
     {
@@ -49,10 +57,10 @@ public class SDebug_SoccerArena : MonoBehaviour
         m_goalBlueInner.localScale = inner;
         m_goalBlueOuter.localScale = outer;
 
-        m_goalRedInner.localPosition = SDebug_Relocation.RotatePointAroundPivot(position, Vector3.zero, new Vector3(0, -90, 0));
-        m_goalBlueInner.localPosition = SDebug_Relocation.RotatePointAroundPivot(position, Vector3.zero, new Vector3(0, 90, 0));
-        m_goalRedInner.localRotation = Quaternion.Euler(0, -90, 0);
-        m_goalBlueInner.localRotation = Quaternion.Euler(0, 90, 0);
+        m_goalRedInner.localPosition = SDebug_Relocation.RotatePointAroundPivot(position, Vector3.zero, new Vector3(0, 90, 0));
+        m_goalBlueInner.localPosition = SDebug_Relocation.RotatePointAroundPivot(position, Vector3.zero, new Vector3(0, -90, 0));
+        m_goalRedInner.localRotation = Quaternion.Euler(0, 90, 0);
+        m_goalBlueInner.localRotation = Quaternion.Euler(0, -90, 0);
         m_goalBlueOuter.localPosition= m_goalBlueInner.localPosition;
         m_goalRedOuter.localPosition = m_goalRedInner.localPosition;
         m_goalBlueOuter.localRotation = m_goalBlueInner.localRotation;
