@@ -1,12 +1,10 @@
 
 {                                                                   
-            "name": "be.eloistree.dronemultistructandparserEditor",          
-    "references": ["be.eloistree.dronemultistructandparser"
+            "name": "be.elab.dronemultistructandparser",          
+    "references": [
 ],                                                              
     "optionalUnityReferences": [],                                  
-    "includePlatforms": [                                           
-        "Editor"                                                    
-    ],                                                              
+    "includePlatforms": [],                                                  
     "excludePlatforms": [],                                         
     "allowUnsafeCode": false,                                       
     "overrideReferences": false,                                    
